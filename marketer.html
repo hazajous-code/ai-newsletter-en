@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI Trend Search · Vol.01 Marketer Kit</title>
-<meta name="description" content="Vol.01 Marketer Kit — case, checklist and a 30-minute exercise">
+<title>AI Trend Search · Vol.02 Marketer Kit</title>
+<meta name="description" content="Vol.02 Marketer Kit — case, checklist and a 30-minute exercise">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
@@ -17,17 +17,17 @@
 <nav class="tabs" aria-label="Menu"><a href="index.html">Newsletter</a><a href="marketer.html" class="on">Marketer Kit</a><a href="news.html">Today's AI News</a><a href="archive.html">Past issues</a><a href="https://hazajous-code.github.io/ai-newsletter-claude/trend/" lang="ko">한국어</a><span class="fsctl" role="group" aria-label="Text size">Text size <button type="button" data-fs="">Normal</button><button type="button" data-fs="fs-l">Large</button><button type="button" data-fs="fs-xl">X-Large</button></span></nav>
 
 <header class="mast tight">
-  <div class="top"><span>AI TREND SEARCH — Marketer Kit</span><span>Vol.01 · Oct 15, 2026 (Thu)</span></div>
-  <h1 style="font-size:clamp(30px,6vw,46px)">A practical kit for <span>reading customer intent</span></h1>
-  <p class="sub">Material for turning this issue's <a href="index.html">weekly newsletter</a> into work. Check what's possible and under what conditions through a real case, judge your situation with a checklist, then produce one deliverable in a 30-minute exercise.</p>
+  <div class="top"><span>AI TREND SEARCH — Marketer Kit</span><span>Vol.02 · Oct 20, 2026 (Tue)</span></div>
+  <h1 style="font-size:clamp(30px,6vw,46px)">AI agents are coming to shop <span>for your customers</span></h1>
+  <p class="sub">Material for turning this issue's <a href="index.html">weekly newsletter</a> into work. See how retailers are treating AI agents<sup class="fn"><a href="#g1" id="r1" title="AI agent: Unlike a chatbot that only answers questions, an AI that takes a goal, breaks it into steps, uses apps and actually carries out the work.">1</a></sup>, judge your situation with a checklist, then draft something you can put straight into your product feed in a 30-minute exercise.</p>
 </header>
 
 <div class="tldr">
   <h2>This week's kit</h2>
   <ol>
-    <li><b>Case:</b> When customers state a goal instead of a product name, Walmart's AI shopping assistant<sup class="fn"><a href="#g1" id="r1" title="AI shopping assistant: An AI in a store&#x27;s app or site that answers questions, compares products and adds items to the cart for the customer.">1</a></sup> Sparky fills the cart. As of the August earnings call, usage was up 70% year over year.</li>
-    <li><b>Judgment:</b> AI shopping assistants match customer intent against product attributes and reviews. Start by checking whether your product information answers the situations customers describe.</li>
-    <li><b>This week's deliverable:</b> a "gap list" from checking one product page against five customer questions, and a one-page fix backed by evidence.</li>
+    <li><b>Case:</b> US retailers differ widely in how far they open the door to AI agents. Amazon blocks them, QVC lets them in, Walmart takes over the handoff. Walmart said checkout inside ChatGPT converted<sup class="fn"><a href="#g2" id="r2" title="Conversion rate: The share of visitors or attempts that end in an actual purchase.">2</a></sup> at only about a third of the rate of shoppers who clicked through to its site.</li>
+    <li><b>Judgment:</b> Agents read product feeds<sup class="fn"><a href="#g3" id="r3" title="Product feed: A data file that organizes product information into set fields (title, price, stock, etc.) and sends it to shopping channels.">3</a></sup> and product details to choose. Google Merchant Center<sup class="fn"><a href="#g4" id="r4" title="Google Merchant Center: Google&#x27;s tool for stores and brands to upload and manage product information (product feeds) for Google Search, Shopping and ads.">4</a></sup>'s "conversational attributes" let you put answers to customer questions directly into the feed.</li>
+    <li><b>This week's deliverable:</b> five draft "question and answer" attribute pairs built from real customer inquiries, and one table ready for a supplemental data source<sup class="fn"><a href="#g5" id="r5" title="Supplemental data source: A Merchant Center option to upload only extra fields separately and attach them, leaving the existing product feed unchanged.">5</a></sup>.</li>
   </ol>
   <p class="jump">Jump to <a href="#m1">01 Case</a><a href="#m2">02 Checklist</a><a href="#m3">03 TRY THIS</a> <span class="muted">· about 40 min including the exercise</span></p>
 </div>
@@ -35,113 +35,139 @@
 <!-- 01 CASE -->
 <section aria-labelledby="m1">
   <p class="label">01 · Case study</p>
-  <h2 id="m1">Walmart Sparky — say your goal, and the cart fills up</h2>
-  <p class="badges"><span class="badge real">Real case</span><span class="badge">Disclosed on 2026 earnings calls</span><span class="badge vendor">Results: company executives' statements · not independently verified</span></p>
-  <p class="lede">Walmart added the AI shopping assistant Sparky to its app in June 2025 and has disclosed results on every earnings call in 2026. It is a case of turning the moment a customer describes <b>what they're trying to do</b>, instead of typing a search term, into a sale.</p>
+  <h2 id="m1">How far are retailers opening the door to AI agents?</h2>
+  <p class="badges"><span class="badge real">Real case</span><span class="badge">Disclosed in 2026</span><span class="badge vendor">Figures: company statements and press reports · not independently verified</span></p>
+  <p class="lede">As customers began telling AI agents "find something that fits these conditions and buy it," retailers had to decide whether to let those agents in and how much to hand over. As of early October, major US retailers had made very different choices.</p>
 
+  <div class="tblwrap">
+  <table class="tbl">
+    <thead><tr><th>Approach</th><th>Company</th><th>What and why</th></tr></thead>
+    <tbody>
+      <tr><td>Block</td><td>Amazon</td><td>Blocked Meta's Muse on Sept 21, citing no notice or permission, no self-identification as an agent, and handling of customer login credentials. Building its own shopping assistant separately</td></tr>
+      <tr><td>Open</td><td>QVC · HSN</td><td>Lets agents complete purchases. Provides product catalogs<sup class="fn"><a href="#g6" id="r6" title="Product catalog: List data of the products you sell, with names, prices, stock and specs.">6</a></sup> to OpenAI and Google</td></tr>
+      <tr><td>Take over</td><td>Walmart</td><td>Gemini surfaces Walmart products; when the shopper picks one, Walmart's shopping assistant Sparky takes over the cart. Walmart controls the rest of the journey</td></tr>
+      <tr><td>Open with conditions</td><td>Tapestry (Coach, Kate Spade)</td><td>Allows purchases in Google AI Mode<sup class="fn"><a href="#g7" id="r7" title="Google AI Mode: A search view inside Google where you ask and get answers conversationally with AI.">7</a></sup> and Gemini, but each order needs the shopper's explicit approval. No agent checkout on its own sites. Cites fraud and inventory hoarding</td></tr>
+      <tr><td>Stay closed</td><td>Kohl's</td><td>Doesn't accept purchases through agent channels</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="muted">※ Based on PYMNTS reporting (10/5). Each company's policy may change.</p>
+
+  <h3>Why Walmart pulled back from in-chat checkout</h3>
   <div class="tblwrap">
   <table class="tbl case">
     <tbody>
-      <tr><th>Company / timing / sources</th><td>Walmart (US). Launched June 2025. Executives disclosed figures at earnings calls and investor events in Feb (Q4), Apr–Jun (Q1) and Aug (Q2) 2026. Reported by Talk Business (7/9) and Benzinga (8/24); Walmart launch announcement (June 2025)</td></tr>
-      <tr><th>Problem to solve</th><td>Typing a product name into a search box and scanning results made it hard to handle goal-driven shopping in one go, like "high-protein meals for this week" or "clothes for the weather where I'm traveling."</td></tr>
-      <tr><th>Actual scope</th><td>An "Ask Sparky" button in the app. Answers product questions, compares, summarizes reviews, recommends, then adds to cart. In 2026: Spanish support, in-store use, automatic reordering of frequent items. Also works inside ChatGPT since March.</td></tr>
-      <tr><th>Customer intent revealed</th><td>Customers ask in terms of goals and situations. E.g., "Plan a healthy high-protein week of meals" → suggests recipes and meal kits and adds them in one step, recognizing items already bought so they aren't bought again. Q1 units sold quadrupled year over year, driven by repeat purchases of essentials and groceries.</td></tr>
-      <tr><th>How it works · human judgment</th><td>A conversational assistant layered on existing AI features (search, review summaries, product descriptions, comparisons). Testing "Sponsored Prompts<sup class="fn"><a href="#g2" id="r2" title="Sponsored Prompts: Suggested questions shown inside the assistant as ads, paid for by advertisers.">2</a></sup>" shown as ads inside the assistant. How products are recommended and where humans review was not disclosed.</td></tr>
-      <tr><th>Results</th><td>Used by about half of app users; users' average order value<sup class="fn"><a href="#g3" id="r3" title="Average order value: The average amount a customer spends per order.">3</a></sup> about 35% higher (executive remarks, Feb–Apr). Weekly active users up more than 110% quarter over quarter; GMV<sup class="fn"><a href="#g4" id="r4" title="GMV: Gross merchandise value: the total value of goods sold through a channel over a period.">4</a></sup> through Sparky up 150% (Q1). Usage up 70% year over year; users spend 40% more per order (Q2, CEO John Furner).</td></tr>
-      <tr><th>Measurement conditions</th><td>Executive remarks on earnings calls. No control group<sup class="fn"><a href="#g5" id="r5" title="Control group: A comparison group that didn&#x27;t get the change. Without one, you can&#x27;t tell whether the change itself caused the result.">5</a></sup> or measurement method disclosed. Customers who already buy more may simply use Sparky more, so it can't be concluded that Sparky caused the extra spending.</td></tr>
-      <tr><th>Limits</th><td>A Walmart executive called it "still very early." About 85% of shopping still happens in stores. A large US retailer's own channel, so it doesn't transfer directly.</td></tr>
+      <tr><th>What it did</th><td>From November 2025, sold about 200,000 products through OpenAI's Instant Checkout inside ChatGPT</td></tr>
+      <tr><th>Result</th><td>Purchases completed inside ChatGPT converted at <b>about one-third</b> the rate of shoppers who clicked through to Walmart's site (March 2026, Daniel Danker, Walmart EVP of product and design, as reported by WIRED)</td></tr>
+      <tr><th>What changed</th><td>Embedded Walmart's Sparky inside ChatGPT: shoppers log into Walmart, sync their cart, and pay in Walmart's own system. The same approach was applied to Gemini</td></tr>
+      <tr><th>Measurement conditions</th><td>Absolute conversion rates and the comparison method weren't disclosed. OpenAI has since been moving away from in-chat checkout toward app-based checkout handled by merchants</td></tr>
     </tbody>
   </table>
   </div>
 
-  <h3>If we applied it</h3>
-  <p>Most brands won't build an assistant like Sparky. Instead, they'll be <b>the products that retailer, search and Meta AI assistants choose between</b>. AI shopping assistants match a customer's goal against product attributes such as size, material, use and ingredients, and draw on reviews that describe specific use situations (agency analysis). If attributes are empty or the copy is a list of keywords, your product can't answer the situation the customer described.</p>
-  <div class="ba">
-    <div><small>Keyword-driven product copy (hypothetical · compact air purifier)</small>Removes 99.9% of fine dust, low noise, smart IoT, high-efficiency filter, compact design</div>
-    <div class="after"><small>Rewritten from the customer's situation and intent</small>For studios and bedrooms (up to ○○ m²). Sleep mode runs at ○○ dB, quiet enough to leave on by the bed; the filter changes every ○ months without tools. Includes pre-filter cleaning guidance for homes with pets.</div>
-  </div>
-  <p class="muted">※ ○○ marks where actual product specs go. Never fill in unverified numbers.</p>
-  <p>The first version reads the same on any brand. The second answers the customer question "a quiet air purifier I can leave on all night in my small bedroom" directly. The same information also needs to go into product feed<sup class="fn"><a href="#g6" id="r6" title="Product feed: A data file that organizes product information into set fields (title, price, stock, etc.) and sends it to shopping channels.">6</a></sup> attributes (room size, noise, filter interval) for AI assistants to read it.</p>
+  <h3>Traffic through agents is still growing</h3>
+  <p>On its Q2 earnings call in August, Shopify said AI-driven traffic and orders to merchants' stores had tripled year over year. The share of new customers among AI-channel orders was about twice that of other channels, and 75% of AI-attributed purchases came from outside the top 100 categories. Management also said the share of total GMV<sup class="fn"><a href="#g8" id="r8" title="GMV: Gross merchandise value: the total value of goods sold through a channel over a period.">8</a></sup> is still small.</p>
+  <p>In short, <b>agents finding products is growing, while where checkout happens is still unsettled.</b> Either way, the first thing an agent reads is your product feed and product details.</p>
 
-  <p class="muted"><b>Reference case</b> Zalando (European fashion platform) also found in 2023–2024 that customers using its AI assistant described situations, moods and budgets instead of product names, and shifted to recommendations reflecting location, weather and occasions (Zalando design team retrospective, Nov 2024).</p>
+  <h3>If we applied it — conversational attributes</h3>
+  <p>At Google Marketing Live in May, Google announced "conversational attributes" for Merchant Center. They're <b>optional attributes</b> that help AI and agents understand products more precisely on AI search surfaces such as AI Mode, and adding them doesn't affect existing products' approval status. You don't need to repeat what's already in the product description.</p>
+  <div class="tblwrap">
+  <table class="tbl">
+    <thead><tr><th>Attribute</th><th>What goes in</th><th>Example (hypothetical · front-load washer)</th></tr></thead>
+    <tbody>
+      <tr><td>Question and answer<br><span class="muted">question_and_answer</span></td><td>Questions customers often ask, with answers</td><td>"Can it be built in?":"It fits a space ○○ cm wide."</td></tr>
+      <tr><td>Document link<br><span class="muted">document_link</span></td><td>PDF links such as the user manual</td><td>Link to the product manual PDF</td></tr>
+      <tr><td>Related product<br><span class="muted">related_product</span></td><td>Accessories, parts, often-bought-with items</td><td>accessory:gtin:○○○ (pedestal)</td></tr>
+      <tr><td>Item group title<br><span class="muted">item_group_title</span></td><td>A name grouping models that differ by color or capacity</td><td>○○ front-load washer series</td></tr>
+      <tr><td>Variant option<br><span class="muted">variant_option</span></td><td>How the models differ</td><td>capacity:○○kg, color:white</td></tr>
+      <tr><td>Popularity rank<br><span class="muted">popularity_rank</span></td><td>Sales rank among your products (percentile)</td><td>95.5</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="muted">※ ○○ marks where actual product specs go. Formats follow the Google Merchant Center Help Center; adding them through a supplemental data source is recommended.</p>
 
   <div class="roles">
-    <p><b>For practitioners</b> This week, pick one product and find the gaps in its product page and feed with five questions customers would actually ask (03 TRY THIS).</p>
-    <p><b>For clients</b> To decide how to respond to AI shopping assistants, first check ① whether your main sales channels have AI assistants ② how complete your product attribute data is ③ whether reviews describing uses and situations are accumulating.</p>
+    <p><b>For practitioners</b> Turning the questions that come up most in customer inquiries into "question and answer" attributes adds to what AI reads without rewriting the product page (03 TRY THIS).</p>
+    <p><b>For clients</b> To decide how to respond to agents, first check ① each main sales channel's agent policy ② where checkout should happen (inside the channel or on your own site) ③ whether your product feed contains the answers to customer questions.</p>
   </div>
 </section>
 
 <!-- 02 CHECKLIST -->
 <section aria-labelledby="m2">
   <p class="label">02 · Checklist</p>
-  <h2 id="m2">Can an AI shopping assistant choose our product?</h2>
-  <p>Topic: check whether your product information answers customers' questions (intent). See whether you can meet the <b>done when</b> standard for each item.</p>
+  <h2 id="m2">Can an AI agent read and buy our products?</h2>
+  <p>Topic: decide what to allow AI agents acting for customers, and what to have them read. See whether you can meet the <b>done when</b> standard for each item.</p>
   <div class="tblwrap">
   <table class="tbl">
     <thead><tr><th>Check</th><th>Done when</th><th>Suggested owner</th></tr></thead>
     <tbody>
-      <tr><td>Customer situations</td><td>For one hero product, three reasons customers buy it or situations they use it in are written down, with evidence from inquiries and reviews</td><td>Planning · account team</td></tr>
-      <tr><td>Product attributes</td><td>All attribute fields required by the channel (size, material, use, ingredients, compatibility, etc.) are filled</td><td>Commerce · feed manager</td></tr>
-      <tr><td>Product copy</td><td>Not a keyword list — there's a sentence answering each of the three customer situations</td><td>Content · copywriter</td></tr>
-      <tr><td>Reviews</td><td>Request wording and timing are set so reviews describing specific use situations accumulate, not just star ratings</td><td>CRM manager</td></tr>
-      <tr><td>Factual basis</td><td>Every number on the page and feed matches the official spec sheet and can be traced to a source</td><td>Brand manager</td></tr>
-      <tr><td>Monitoring</td><td>An owner and cadence are set for regularly entering the same customer questions into AI search and shopping assistants and recording how our and competitors' products appear</td><td>Performance · analytics</td></tr>
+      <tr><td>Agent policy</td><td>Whether outside AI agents may browse and check out on your own store, and who decides, is documented</td><td>E-commerce lead · security</td></tr>
+      <tr><td>Channel status</td><td>Agent policies and checkout methods of each channel you sell on (marketplaces, retailers, Google Shopping, etc.) are in one table</td><td>Commerce · sales</td></tr>
+      <tr><td>Core feed quality</td><td>Price, stock and shipping cost match the live sales page, with a set update cadence</td><td>Feed manager</td></tr>
+      <tr><td>Answers to customer questions</td><td>For each hero product, answers to five questions from customer inquiries are in the description or in "question and answer" attributes</td><td>Content · customer service</td></tr>
+      <tr><td>Supporting documents</td><td>Manual and spec sheet PDF links work, and every number in the feed and page matches the official specs</td><td>Brand manager</td></tr>
+      <tr><td>Policy information</td><td>Shipping, returns and installation terms are published in clear sentences that AI, not just people, can read without misunderstanding</td><td>Customer service · legal</td></tr>
+      <tr><td>Measurement</td><td>A way to separate traffic and orders via AI search and agents from other channels, and an owner, are set</td><td>Performance · analytics</td></tr>
     </tbody>
   </table>
   </div>
   <div class="verdict">
-    <span><b>Ready to start</b>All six done</span>
-    <span><b>Prepare, then go</b>Attributes or reviews incomplete → record owner and next action</span>
-    <span><b>Hold for now</b>No AI assistant in your sales channels and no customer question data</span>
+    <span><b>Ready to start</b>All seven done</span>
+    <span><b>Prepare, then go</b>Policy or feed quality incomplete → record owner and next action</span>
+    <span><b>Hold for now</b>No AI shopping features in your channels and no feed operation</span>
   </div>
 </section>
 
 <!-- 03 TRY THIS -->
 <section aria-labelledby="m3">
   <p class="label">03 · TRY THIS</p>
-  <h2 id="m3">30-minute exercise: find the gaps in a product page with five customer questions</h2>
+  <h2 id="m3">30-minute exercise: draft "question and answer" attributes from customer inquiries</h2>
   <dl class="spec">
-    <dt>Goal</dt><dd>Check whether your product information answers the questions customers would ask an AI shopping assistant, and find the gaps</dd>
-    <dt>You'll need</dt><dd>Product page copy and feed attributes for one hero product, the official spec sheet, 10–20 customer inquiries and reviews with personal data removed, a generative AI chat tool</dd>
+    <dt>Goal</dt><dd>Pick the questions that come up most in real customer inquiries and draft them in the Merchant Center "question and answer" attribute format</dd>
+    <dt>You'll need</dt><dd>The official spec sheet and current description for one hero product, 20–30 customer inquiries and reviews with personal data removed, a generative AI chat tool</dd>
     <dt>Time / level</dt><dd>About 30 minutes · beginner</dd>
-    <dt>Deliverable</dt><dd>A table rating each question "answered / partly answered / not answered" + a gap list + a one-page fix backed by evidence</dd>
+    <dt>Deliverable</dt><dd>Five question-and-answer pairs (formatted) + a list of "needs confirmation" questions the spec sheet can't answer</dd>
   </dl>
   <ol class="steps">
-    <li><b>5 min</b> Write five questions using customers' own words from inquiries and reviews (e.g., "Is it quiet enough to run all night in a studio bedroom?")</li>
-    <li><b>10 min</b> Use the prompt below to check whether the page and feed answer each question</li>
-    <li><b>10 min</b> Check the results against the official spec sheet, remove inference and exaggeration, and refine the fix</li>
-    <li><b>5 min</b> Enter the same questions into AI search and shopping tools and record how our and competitors' products appear</li>
+    <li><b>5 min</b> Paste in the inquiries and reviews and use the prompt below to pull out the most frequent questions</li>
+    <li><b>10 min</b> Pick five questions the official spec sheet can answer and draft the answers</li>
+    <li><b>10 min</b> Check every number and condition against the spec sheet, and drop anything already in the description</li>
+    <li><b>5 min</b> Format the pairs and ask your feed manager to add them via a supplemental data source</li>
   </ol>
-  <pre class="prompt" id="prompt1">Goal: Check whether our product information answers the questions customers would ask an AI shopping assistant.
+  <pre class="prompt" id="prompt1">Goal: Draft Google Merchant Center "question and answer (question_and_answer)" attributes based on customer inquiries.
 
 Input:
-- Product name and target customer: [enter]
+- Product name and model: [enter]
 - Official spec sheet (verified facts): [enter]
-- Current product page copy: [enter]
-- Current product feed attributes: [enter]
-- Five customer questions (based on wording from inquiries and reviews, with source numbers): [enter]
+- Current description: [enter]
+- Customer inquiries and reviews (personal data removed, numbered): [enter]
 
-Write the output as a table with these columns:
-Customer question | Answered / partly / not answered | Supporting copy or attribute | Missing information | Can the official spec sheet fill it (yes/no) | Draft fix
+Tasks:
+1. Pull the 10 most frequent questions from the inquiries, in order of frequency, and note the inquiry numbers each is based on.
+2. Of those, pick five that can be answered from the official spec sheet alone and write answers.
+3. Mark any question already answered in the current description as "duplicate."
+
+Output:
+- Table: Question | Source inquiry numbers | Answerable from spec sheet | Duplicate of description | Draft answer
+- Final line: the five chosen pairs in "Question":"Answer" format, joined with commas on one line
 
 Rules:
-1. Base each rating only on what actually appears in the copy and attributes provided.
-2. Don't invent numbers, benefits or certifications not in the official spec sheet. If it can't be filled, mark it "needs confirmation."
-3. Distinguish verified facts from your own inferences.
-4. Keep the situational wording from the customer's question in the fix, but don't use superlatives (best, perfect, etc.).
-5. At the end, list separately the feed attributes to add or fix.</pre>
+1. Don't invent numbers, benefits, certifications or compatibility not in the official spec sheet; mark them "needs confirmation."
+2. Keep the wording customers actually used in the questions.
+3. Keep answers short and factual, with no superlatives (best, perfect, etc.).
+4. Distinguish verified facts from your own inferences.</pre>
   <button class="copy" type="button" onclick="(function(b){try{navigator.clipboard.writeText(document.getElementById('prompt1').innerText);b.textContent='Copied';setTimeout(function(){b.textContent='Copy prompt'},1500)}catch(e){}})(this)">Copy prompt</button>
 
-  <div class="action"><p class="h">Done when</p><p>All five questions have a rating linked to evidence, every number in the fix matches the official spec sheet, and the owner can pick one item to fix this week.</p></div>
+  <div class="action"><p class="h">Done when</p><p>All five pairs link to real inquiry numbers, every number in the answers matches the official spec sheet, and none duplicate the description.</p></div>
   <div class="roles">
-    <p><b>Practitioner deliverable</b> A per-question rating table and a list of page and feed fixes</p>
-    <p><b>Client deliverable</b> A one-page audit showing "customers ask AI this, and our product information currently answers this much"</p>
+    <p><b>Practitioner deliverable</b> Five formatted "question and answer" pairs and a list of "needs confirmation" questions</p>
+    <p><b>Client deliverable</b> A one-page report showing "questions customers actually ask that our product information can't answer yet"</p>
   </div>
-  <div class="frame judge"><span class="tag">Next step</span><p>After applying the fixes to the page and attributes, enter the same questions into AI search and shopping tools every 2–4 weeks and record changes in visibility. AI assistants' recommendations change often, so don't judge results from a single check.</p></div>
+  <div class="frame judge"><span class="tag">Next step</span><p>After adding them via a supplemental data source, enter the same questions into AI search such as Google AI Mode every 2–4 weeks and record changes in answers and visibility. Hand the "needs confirmation" questions to the product team as grounds for improving the spec sheet.</p></div>
 
   <h3 style="margin-top:36px">A question for your team today</h3>
-  <p class="teamq">"When a customer asks AI about our product, what is our product page making it say?"</p>
-  <p class="muted" style="margin-top:12px">※ The air purifier copy and exercise questions are hypothetical examples. Case results are based on company executives' statements and press reports.</p>
+  <p class="teamq">"If a customer's AI agent came into our store, would we let it in? And if so, what would we want it to read on the way?"</p>
+  <p class="muted" style="margin-top:12px">※ The washer example and exercise questions are hypothetical. Case figures are based on company statements and press reports.</p>
 </section>
 
 <!-- GLOSSARY -->
@@ -149,12 +175,14 @@ Rules:
   <p class="label">GLOSSARY</p>
   <h2 id="sg" style="font-size:22px">Glossary</h2>
   <ol class="gloss">
-    <li id="g1"><b>AI shopping assistant</b> An AI in a store&#x27;s app or site that answers questions, compares products and adds items to the cart for the customer. <a href="#r1" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g2"><b>Sponsored Prompts</b> Suggested questions shown inside the assistant as ads, paid for by advertisers. <a href="#r2" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g3"><b>Average order value</b> The average amount a customer spends per order. <a href="#r3" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g4"><b>GMV</b> Gross merchandise value: the total value of goods sold through a channel over a period. <a href="#r4" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g5"><b>Control group</b> A comparison group that didn&#x27;t get the change. Without one, you can&#x27;t tell whether the change itself caused the result. <a href="#r5" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g6"><b>Product feed</b> A data file that organizes product information into set fields (title, price, stock, etc.) and sends it to shopping channels. <a href="#r6" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g1"><b>AI agent</b> Unlike a chatbot that only answers questions, an AI that takes a goal, breaks it into steps, uses apps and actually carries out the work. <a href="#r1" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g2"><b>Conversion rate</b> The share of visitors or attempts that end in an actual purchase. <a href="#r2" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g3"><b>Product feed</b> A data file that organizes product information into set fields (title, price, stock, etc.) and sends it to shopping channels. <a href="#r3" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g4"><b>Google Merchant Center</b> Google&#x27;s tool for stores and brands to upload and manage product information (product feeds) for Google Search, Shopping and ads. <a href="#r4" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g5"><b>Supplemental data source</b> A Merchant Center option to upload only extra fields separately and attach them, leaving the existing product feed unchanged. <a href="#r5" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g6"><b>Product catalog</b> List data of the products you sell, with names, prices, stock and specs. <a href="#r6" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g7"><b>Google AI Mode</b> A search view inside Google where you ask and get answers conversationally with AI. <a href="#r7" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g8"><b>GMV</b> Gross merchandise value: the total value of goods sold through a channel over a period. <a href="#r8" class="back" aria-label="Back to text">↩</a></li>
   </ol>
 </section>
 
@@ -163,16 +191,19 @@ Rules:
   <p class="label">SOURCES</p>
   <h2 id="s9" style="font-size:22px">Sources</h2>
   <ol class="src">
-    <li><a href="https://talkbusiness.net/2026/07/the-supply-side-walmarts-sparky-shopping-agent-drives-more-sales/">The Supply Side: Walmart's Sparky shopping agent drives more sales — Talk Business &amp; Politics (2026/7/9)</a></li>
-    <li><a href="https://finance.yahoo.com/technology/ai/articles/walmart-ai-bet-working-sparky-110112843.html">Walmart's AI Bet Is Working: Sparky Users Spend 40% More — Benzinga via Yahoo Finance (2026/8/24)</a></li>
-    <li><a href="https://corporate.walmart.com/news/2025/06/06/walmart-the-future-of-shopping-is-agentic-meet-sparky">Walmart: The Future of Shopping Is Agentic. Meet Sparky — Walmart (2025/6/6)</a></li>
-    <li><a href="https://www.envisionhorizons.com/walmart-sparky-ai-product-discovery/">Walmart's Sparky is changing the way shoppers find products — Envision Horizons (agency analysis)</a></li>
-    <li><a href="https://medium.com/zalando-design/designing-for-generative-ai-powered-content-discovery-10-learnings-from-zalando-assistant-4c9ff3206a44">10 learnings from Zalando Assistant — Zalando Design (2024/11/27, reference case)</a></li>
+    <li><a href="https://www.pymnts.com/news/retail/2026/ai-agents-knock-retailers-decide-how-wide-to-open-the-door/">AI Agents Knock. Retailers Decide How Wide to Open the Door — PYMNTS (10/5)</a></li>
+    <li><a href="https://www.adweek.com/commerce/amazon-locks-out-metas-muse-in-agentic-shopping-standoff/">Amazon locks out Meta's Muse in agentic shopping standoff — Adweek (9/21)</a></li>
+    <li><a href="https://searchengineland.com/walmart-chatgpt-checkout-converted-worse-472071">Walmart: ChatGPT checkout converted worse than its website — Search Engine Land (3/19)</a></li>
+    <li><a href="https://martech.org/walmart-says-chatgpt-checkout-converted-3x-worse-than-its-own-website/">Walmart says ChatGPT checkout converted 3x worse than its own website — MarTech</a></li>
+    <li><a href="https://finance.yahoo.com/markets/stocks/articles/shopify-inc-shop-q2-2026-210423114.html">Shopify Q2 2026 Earnings Call Highlights — Yahoo Finance (GuruFocus, 8/5)</a></li>
+    <li><a href="https://www.seroundtable.com/google-merchant-center-conversational-attributes-41370.html">Google Merchant Center Conversational Attributes — Search Engine Roundtable (5/26)</a></li>
+    <li><a href="https://support.google.com/merchants/answer/17085370?hl=en">How to use conversational attributes — Google Merchant Center Help</a></li>
+    <li><a href="https://searchengineland.com/google-expands-universal-commerce-protocol-and-launches-new-agentic-shopping-tools-478113">Google expands Universal Commerce Protocol and launches new agentic shopping tools — Search Engine Land (5/20)</a></li>
   </ol>
 </section>
 
 <footer>
-  <p>AI Trend Search is the English edition of a weekly AI newsletter for marketers, published every Thursday (KST). · <a href="archive.html">Past issues</a> · <a href="https://hazajous-code.github.io/ai-newsletter-claude/trend/">Korean edition</a></p>
+  <p>AI Trend Search is the English edition of a weekly AI newsletter for marketers, published every Tuesday (KST). · <a href="archive.html">Past issues</a> · <a href="https://hazajous-code.github.io/ai-newsletter-claude/trend/">Korean edition</a></p>
   <p>Summaries of published reporting; figures are as reported by each source or claimed by the companies involved.</p>
 </footer>
 

@@ -1,6 +1,6 @@
 # AI Trend Search — English edition
 
-Weekly AI trends for marketers, published every Thursday (KST).
+Weekly AI trends for marketers, published every Tuesday (KST).
 Live site: https://hazajous-code.github.io/ai-newsletter-en/
 Korean edition: https://hazajous-code.github.io/ai-newsletter-claude/trend/ (source repo: hazajous-code/ai-newsletter-claude)
 
