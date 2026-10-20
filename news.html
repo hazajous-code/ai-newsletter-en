@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Trend Search · Today's AI News</title>
+<meta name="description" content="Today's most important AI stories from global and Korean outlets, in English">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=en1">
+<script>try{var f=localStorage.getItem('fs');if(f)document.documentElement.classList.add(f)}catch(e){}</script>
+</head>
+<body>
+<div class="wrap">
+<nav class="tabs" aria-label="Menu"><a href="index.html">Newsletter</a><a href="marketer.html">Marketer Kit</a><a href="news.html" class="on">Today's AI News</a><a href="archive.html">Past issues</a><a href="https://hazajous-code.github.io/ai-newsletter-claude/trend/" lang="ko">한국어</a><span class="fsctl" role="group" aria-label="Text size">Text size <button type="button" data-fs="">Normal</button><button type="button" data-fs="fs-l">Large</button><button type="button" data-fs="fs-xl">X-Large</button></span></nav>
+
+<header class="mast tight">
+  <div class="top"><span>AI TREND SEARCH — Today's AI News</span><span id="d">—</span></div>
+  <h1 style="font-size:clamp(32px,6vw,48px)"><span id="hd">Today's</span> <span>AI news</span> worth knowing</h1>
+  <p class="sub">The most important stories from the past three days across 20 global and Korean AI outlets. Up to 6 global and 5 Korean stories. Korean stories appear with English summaries once translated. Pick earlier dates below.</p>
+  <div class="news-meta"><span id="u">Updated —</span><span>Updated every morning (KST)</span></div>
+  <div class="datenav" aria-label="Date navigation">
+    <button type="button" id="prev" aria-label="Previous day">← Previous day</button>
+    <select id="pick" aria-label="Choose a date"></select>
+    <button type="button" id="next" aria-label="Next day">Next day →</button>
+    <a href="news.html" id="today" class="todaylink" hidden>Back to today</a>
+  </div>
+</header>
+
+<section class="news-region" style="border-bottom:0" aria-labelledby="hg">
+  <h2 id="hg">Global <small id="cg"></small></h2>
+  <ol class="news-list" id="lg"><li class="empty" style="padding-left:0">Loading…</li></ol>
+</section>
+
+<section class="news-region" style="border-bottom:0" aria-labelledby="hk">
+  <h2 id="hk">From Korea <small id="ck"></small></h2>
+  <ol class="news-list" id="lk"><li class="empty" style="padding-left:0">Loading…</li></ol>
+</section>
+
+<section style="border-bottom:0;padding-top:28px">
+  <div class="box">
+    <h4>How stories are picked</h4>
+    <ul>
+      <li>Only stories with an AI term in the headline · Korean stories show an English headline and summary, with a KO badge linking to the Korean original</li>
+      <li>Scoring: mentions of big tech and major AI products, <b>impact on marketing, advertising and commerce</b>, launches and announcements, policy, law and security, recency, outlet reliability</li>
+      <li>Customer stories, funding and partnership promotion on company blogs are scored down</li>
+      <li>At most 2 per outlet, one per story, and nothing below the score threshold</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p><a href="index.html">Weekly newsletter</a> · <a href="archive.html">Past issues</a> · <a href="https://hazajous-code.github.io/ai-newsletter-claude/trend/news.html" lang="ko">한국어</a></p>
+</footer>
+
+<script>
+(function(){
+  var DATA="/ai-newsletter-claude/trend/data/";
+  var TAGS={"마케팅 영향":"Marketing impact","빅테크":"Big tech","출시·발표":"Launch","정책·법·보안":"Policy · law · security"};
+  function esc(s){return String(s||"").replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+  function ago(iso){
+    var t=Date.parse(iso); if(!t) return "";
+    var h=Math.round((Date.now()-t)/36e5);
+    if(h<1) return "just now"; if(h<24) return h+"h ago";
+    if(h<72) return Math.round(h/24)+"d ago";
+    var dt=new Date(t); return dt.toLocaleDateString("en-US",{month:"short",day:"numeric"});
+  }
+  function render(list,el,cnt,korea){
+    var ul=document.getElementById(el);
+    list=(list||[]).filter(function(a){return korea?!!a.titleEn:true;});
+    if(!list.length){ul.innerHTML='<li class="empty" style="padding-left:0">'+(korea?"English summaries of today's Korean stories haven't been added yet.":"No stories passed the threshold today.")+'</li>';return;}
+    document.getElementById(cnt).textContent=list.length+(list.length>1?" stories":" story");
+    ul.innerHTML=list.map(function(a){
+      var tags=(a.tags||[]).map(function(t){return '<span class="ntag'+(t==="마케팅 영향"?" mk":"")+'">'+esc(TAGS[t]||t)+'</span>';}).join("");
+      var head;
+      if(korea){
+        head='<span class="lang">KO</span><a class="t" href="'+esc(a.url)+'" target="_blank" rel="noopener">'+esc(a.titleEn)+'</a>'+
+          (a.summaryEn?'<p class="s">'+esc(a.summaryEn)+'</p>':'')+
+          '<p class="orig" lang="ko">'+esc(a.title)+'</p>';
+      }else{
+        var en=a.summaryEn||a.summary||"";
+        head='<a class="t" href="'+esc(a.url)+'" target="_blank" rel="noopener">'+esc(a.title)+'</a>'+
+          (en?'<p class="s">'+esc(en)+(en.length>=220&&!/[.!?)"']$/.test(en)?'…':'')+'</p>':'');
+      }
+      return '<li>'+head+'<div class="m"><span>'+esc(a.source)+'</span><span>·</span><span>'+ago(a.publishedAt)+'</span>'+tags+'</div></li>';
+    }).join("");
+  }
+  var DAYS=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  function label(ds){var p=ds.split("-");var dt=new Date(+p[0],+p[1]-1,+p[2]);return MON[+p[1]-1]+" "+(+p[2])+" ("+DAYS[dt.getDay()]+")";}
+  function show(d,dates,cur){
+    var latest=dates.length&&cur===dates[0];
+    document.getElementById("hd").textContent=latest?"Today's":label(cur).replace(/ \(.*\)/,"");
+    document.title="AI Trend Search · "+(latest?"Today's AI News":"AI News, "+label(cur));
+    document.getElementById("d").textContent=cur.replace(/-/g,".");
+    document.getElementById("u").textContent="Updated "+(d.updatedAt||"").replace("T"," ").slice(0,16)+" KST";
+    document.getElementById("cg").textContent="";document.getElementById("ck").textContent="";
+    render(d.global,"lg","cg",false); render(d.korea,"lk","ck",true);
+    var i=dates.indexOf(cur);
+    document.getElementById("prev").disabled=(i<0||i>=dates.length-1);
+    document.getElementById("next").disabled=(i<=0);
+    document.getElementById("today").hidden=latest;
+    document.getElementById("pick").value=cur;
+  }
+  function go(cur,dates,push){
+    fetch(DATA+"news/"+cur+".json?t="+Date.now()).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){
+      show(d,dates,cur);
+      if(push){var u=cur===dates[0]?"news.html":"news.html?d="+cur;history.pushState({d:cur},"",u);}
+      window.scrollTo(0,0);
+    }).catch(fail);
+  }
+  function fail(){["lg","lk"].forEach(function(id){document.getElementById(id).innerHTML='<li class="empty" style="padding-left:0">Couldn\'t load the news. Please refresh in a moment.</li>';});}
+  fetch(DATA+"news/index.json?t="+Date.now()).then(function(r){return r.json();}).then(function(ix){
+    var dates=(ix.dates||[]).map(function(x){return x.date;});
+    var sel=document.getElementById("pick");
+    sel.innerHTML=(ix.dates||[]).map(function(x){return '<option value="'+x.date+'">'+label(x.date)+'</option>';}).join("");
+    var q=(location.search.match(/[?&]d=(\d{4}-\d{2}-\d{2})/)||[])[1];
+    var cur=(q&&dates.indexOf(q)>=0)?q:dates[0];
+    go(cur,dates,false);
+    sel.onchange=function(){go(sel.value,dates,true);};
+    document.getElementById("prev").onclick=function(){var i=dates.indexOf(sel.value);if(i<dates.length-1)go(dates[i+1],dates,true);};
+    document.getElementById("next").onclick=function(){var i=dates.indexOf(sel.value);if(i>0)go(dates[i-1],dates,true);};
+    window.onpopstate=function(){var q2=(location.search.match(/[?&]d=(\d{4}-\d{2}-\d{2})/)||[])[1];go(q2&&dates.indexOf(q2)>=0?q2:dates[0],dates,false);};
+  }).catch(fail);
+})();
+</script>
+
+</div>
+<script>(function(){var h=document.documentElement,bs=document.querySelectorAll('.fsctl button');function set(v){h.classList.remove('fs-l','fs-xl');if(v)h.classList.add(v);bs.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.fs===v?'true':'false')});try{v?localStorage.setItem('fs',v):localStorage.removeItem('fs')}catch(e){}}var cur='';try{cur=localStorage.getItem('fs')||''}catch(e){}set(cur);bs.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.fs)})})})();</script>
+</body>
+</html>

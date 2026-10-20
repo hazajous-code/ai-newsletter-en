@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Trend Search · Vol.02</title>
+<meta name="description" content="Weekly AI trends for marketers — Vol.02: The external world has seen the preview.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=en1">
+<script>try{var f=localStorage.getItem('fs');if(f)document.documentElement.classList.add(f)}catch(e){}</script>
+</head>
+<body>
+<div class="wrap">
+<nav class="tabs" aria-label="Menu"><a href="../index.html" class="on">Newsletter</a><a href="../marketer.html">Marketer Kit</a><a href="../news.html">Today's AI News</a><a href="../archive.html">Past issues</a><a href="https://hazajous-code.github.io/ai-newsletter-claude/trend/" lang="ko">한국어</a><span class="fsctl" role="group" aria-label="Text size">Text size <button type="button" data-fs="">Normal</button><button type="button" data-fs="fs-l">Large</button><button type="button" data-fs="fs-xl">X-Large</button></span></nav>
+
+<header class="mast tight">
+  <div class="top"><span>AI TREND SEARCH — Weekly AI trends for marketers</span><span>Vol.02 · Oct 22, 2026 (Thu)</span></div>
+  <h1>The external world<br>has seen the <span>preview.</span></h1>
+  <p class="sub">— Andrej Karpathy, X post, Oct 11<br>A week that showed how unevenly people know AI. AI is spreading both into virtual computers in the cloud and into the chips in our phones. <b>You only see customer intent as clearly as you've used the AI your customers use.</b></p>
+  <ul class="kw" aria-label="Keywords this issue">
+    <li class="f">AI capability gap</li><li>Karpathy</li><li class="f">VM agents</li><li>Sandboxes</li><li class="f">On-device AI</li><li>Hardwired chips</li><li>Agentic commerce</li><li>Conversational attributes</li>
+  </ul>
+</header>
+
+<div class="tldr">
+  <h2>This issue in three lines</h2>
+  <ol>
+    <li><b>AI capability gap:</b> Karpathy sees people's experience of AI narrowing like a funnel — 6 billion → 1–2 billion → 20 million → 5,000. The same gap opens up inside marketing teams.</li>
+    <li><b>VM agents<sup class="fn"><a href="#g1" id="r1" title="AI agent: Unlike a chatbot that only answers questions, an AI that takes a goal, breaks it into steps, uses apps and actually carries out the work.">1</a></sup>:</b> Agents now work for hours inside isolated virtual computers. Those agents have started visiting our sites on customers' behalf, and Amazon has blocked Meta's Muse.</li>
+    <li><b>AI moves onto chips:</b> Phone chips run models of up to 30 billion parameters<sup class="fn"><a href="#g2" id="r2" title="Parameters: The numbers an AI model adjusts during training. More parameters usually means a bigger, more capable model that needs more computation.">2</a></sup>, and AMD agreed to buy a company that etches models directly into silicon. On-device AI reads and summarizes customers' email and notifications first. For practical steps, see the <a href="2026-10-22-marketer.html">Marketer Kit</a> tab.</li>
+  </ol>
+  <p class="jump">Jump to <a href="#s1">01 Capability gap</a><a href="#s2">02 VM agents</a><a href="#s3">03 Chip AI</a><a href="#s4">04 Platforms</a><a href="2026-10-22-marketer.html">Marketer Kit →</a> <span class="muted">· about 10 min read</span></p>
+</div>
+
+<section aria-labelledby="hero-essay">
+  <p class="label">EDITOR'S NOTE</p>
+  <h2 id="hero-essay">How much have we used the AI our customers use?</h2>
+  <p class="lede">On Oct 11, Andrej Karpathy wrote on X: "The external world has seen the preview." Most people know AI as a free chatbot; only a tiny few have experienced the most advanced systems.</p>
+  <p>Marketers are no exception. Someone who stopped at asking a chatbot instead of searching, or getting draft copy, and someone who has handed an agent hours of work will draw different conclusions from the same news.</p>
+  <p>Meanwhile, customers are moving first. Their agents open our sites inside virtual computers, and their phones summarize the emails we send before they read them. Customer intent increasingly reaches us through AI. In our view, the only way to read that intent is to use the AI customers use ourselves.</p>
+  <p class="pull">You only see customer intent as clearly as you've used the AI your customers use.</p>
+  <p class="muted">※ This is the editorial view of this issue, not a proven fact.</p>
+</section>
+
+<!-- 01 TREND -->
+<section class="framed" aria-labelledby="s1">
+  <p class="label">01 · Key trend</p>
+  <h2 id="s1">How well people know AI has split into four tiers</h2>
+
+  <div class="frame"><span class="tag">What changed</span><p>Andrej Karpathy, an Anthropic<sup class="fn"><a href="#g3" id="r3" title="Anthropic: The US AI company that makes the Claude models. The AI used to produce this newsletter is also one of its models.">3</a></sup> researcher and OpenAI co-founder, wrote in an Oct 11 post on X that people's experience of AI narrows like a funnel, and that the gap is widening.</p></div>
+
+  <div class="tblwrap">
+  <table class="tbl">
+    <thead><tr><th>Tier</th><th>Size (Karpathy's estimate)</th><th>The AI they see</th></tr></thead>
+    <tbody>
+      <tr><td>Barely used it</td><td>About 6 billion</td><td>Little contact with LLMs<sup class="fn"><a href="#g4" id="r4" title="LLM (large language model): AI trained on vast amounts of text to understand and write like a person. The engine behind services like ChatGPT and Claude.">4</a></sup></td></tr>
+      <tr><td>Casual free-tier users</td><td>1–2 billion</td><td>"A better Google search" or a writing aid</td></tr>
+      <tr><td>Professionals on frontier models</td><td>About 20 million</td><td>Mostly math and software experts, handling work that used to take weeks or months</td></tr>
+      <tr><td>Most advanced internal systems</td><td>About 5,000</td><td>Thousands of agents collaborating for weeks on large software projects</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="muted">※ The numbers are Karpathy's rough estimates, not survey results.</p>
+
+  <div class="frame"><span class="tag">Evidence</span><p>Karpathy said AI is improving fastest in domains that are <b>digital, verifiable and economically valuable</b> — coding and math. He also warned that "human review and comprehension are starting to fall behind." The same week offered a real example: on Oct 6, OpenAI posted 722 math manuscripts written with an unreleased model to GitHub<sup class="fn"><a href="#g5" id="r5" title="GitHub: The world&#x27;s largest site where developers post and share code.">5</a></sup>, and the next day withdrew three of them because of a single sign error. It laid bare the gap between how fast AI produces results and how fast people can check them.</p></div>
+
+  <div class="frame"><span class="tag">Marketing impact</span><p>The gap exists inside teams too. In a Supermetrics survey released in March (435 brand and agency marketers in the US, UK, Germany, Australia and Singapore), <b>80% said they feel pressure to adopt AI, but only 6% had fully implemented AI in their work</b>. Most of the pressure (89%) came from the C-suite and board. If customers start shopping through agents while a team is still at the free-chatbot stage, it's hard to imagine what customers are actually doing.</p></div>
+  <div class="frame"><span class="tag">Limits</span><p>Karpathy has worked at Anthropic since May, so his description of "internal systems" is a view from inside an AI company. The actual capabilities of those systems haven't been verified externally. Supermetrics sells marketing data tools, so its sample may overlap with its customer base.</p></div>
+  <div class="frame judge"><span class="tag a">Verdict</span><p><b>Do this week.</b> Find out which tier each team member has reached, and book time for the team to try the AI shopping and search features your customers use, together.</p></div>
+</section>
+
+<!-- 02 AGENT -->
+<section class="framed" aria-labelledby="s2">
+  <p class="label">02 · Agents</p>
+  <h2 id="s2">Agents running in VMs — giving AI a computer of its own</h2>
+
+  <div class="frame"><span class="tag">What changed</span><p>A chatbot only answers inside a chat window. Today's agents get an isolated <b>virtual machine<sup class="fn"><a href="#g6" id="r6" title="Virtual machine (VM): A second computer built in software inside a real one. What happens inside it can be kept from spreading to the computer outside.">6</a></sup></b> — a computer in the cloud — and inside it they open websites, create files and work for hours. Think of it as giving the AI its own office PC.</p></div>
+
+  <div class="tblwrap">
+  <table class="tbl">
+    <thead><tr><th>Compare</th><th>Chatbot</th><th>VM agent</th></tr></thead>
+    <tbody>
+      <tr><td>Isolation</td><td>Answers in text inside the chat window</td><td>Does real work on a separate computer. Mistakes don't spread to your PC or other people's work</td></tr>
+      <tr><td>Persistence</td><td>Ends when the conversation ends</td><td>Work state persists, so it can keep going for hours</td></tr>
+      <tr><td>Permissions</td><td>Outputs text only</td><td>Can click, log in and even pay. What you allow is the key question</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="frame"><span class="tag">Evidence</span><p>On June 22, AWS released Lambda MicroVMs. It runs user- or AI-generated code in a separate <b>microVM<sup class="fn"><a href="#g7" id="r7" title="MicroVM: A small virtual machine stripped down to start and stop very quickly. One is launched per user or job to keep them apart.">7</a></sup></b> for each user or job, and can suspend and resume with state preserved for up to eight hours. It launched in five regions<sup class="fn"><a href="#g8" id="r8" title="Region: A geographic unit where a cloud company groups its servers, e.g., the Tokyo region.">8</a></sup>, including Tokyo. Meta's Muse, covered last issue, also runs inside a dedicated per-user virtual machine (Muse Secure VM).</p></div>
+
+  <div class="frame"><span class="tag">Marketing impact</span><p>These agents are walking into stores on customers' behalf. On Sept 21, Amazon blocked Meta's Muse. Amazon said Muse came in without notice or permission, doesn't identify itself as an agent, and stores customers' login credentials and scrapes account data. Meta did not respond to press requests for comment. Whether a visitor to your site is a person or an agent, and what to let agents do, has become a marketing question.</p></div>
+  <div class="frame"><span class="tag">Limits</span><p>The AWS launch is a runtime for developers, and the announcement doesn't use the phrase "AI agents" (its stated uses include running AI-generated code and coding assistants). Amazon's claims are one side of the story, and Amazon is also a competitor building its own shopping assistant.</p></div>
+  <div class="frame judge"><span class="tag a">Verdict</span><p><b>Decide.</b> Start by deciding whether outside AI agents may come into your site or store to browse and pay, and who makes that call. A practical checklist is in the <a href="2026-10-22-marketer.html">Marketer Kit</a>.</p></div>
+</section>
+
+<!-- 03 CHIP -->
+<section class="framed" aria-labelledby="s3">
+  <p class="label">03 · Chips</p>
+  <h2 id="s3">AI moves onto chips — AI inside devices, and AI etched into silicon</h2>
+
+  <div class="frame"><span class="tag">What changed</span><p>"AI running on a chip" means two different things. One is <b>on-device AI<sup class="fn"><a href="#g9" id="r9" title="On-device AI: AI that runs directly on a device such as a phone or laptop, rather than on servers across the internet.">9</a></sup></b>, running inside phones and laptops; the other is the <b>hardwired chip</b>, with a single AI model etched into the circuitry. Neither is replacing the cloud so much as splitting the work with it.</p></div>
+
+  <div class="tblwrap">
+  <table class="tbl">
+    <thead><tr><th>Branch</th><th>Recent news</th><th>What it means</th></tr></thead>
+    <tbody>
+      <tr><td>On-device AI</td><td>Qualcomm said the NPU<sup class="fn"><a href="#g10" id="r10" title="NPU: A dedicated chip (or area of a chip) built to run AI calculations quickly and with little power. Found in recent phones and laptops.">10</a></sup> in its Snapdragon 8 Elite Gen 6, unveiled in September, can run models of up to 30 billion parameters on the device using a MoE<sup class="fn"><a href="#g11" id="r11" title="MoE (mixture of experts): A design that splits a model into several &quot;expert&quot; parts and uses only some of them for each question. The whole model is large, but each answer takes less computation.">11</a></sup> architecture</td><td>More work handled directly on the phone, without a connection and without sending data out</td></tr>
+      <tr><td>Hardwired chips</td><td>Canadian startup Taalas unveiled HC1 in February, a chip with the entire Llama 3.1 8B model etched in. It claims about 17,000 tokens<sup class="fn"><a href="#g12" id="r12" title="Token: The unit AI uses to process text (roughly a word fragment). Tokens per second is how fast an AI writes its answer.">12</a></sup> per second. Its next chip, HC2, targets models of about 20 billion parameters</td><td>Runs only one fixed model, but fast and with less power</td></tr>
+      <tr><td>Industry moves</td><td>AMD announced it will acquire Taalas on Aug 6 (terms undisclosed; closes after regulatory approval). It envisions GPUs<sup class="fn"><a href="#g13" id="r13" title="GPU: Originally a graphics chip. Because it&#x27;s good at doing many calculations at once, it&#x27;s now the workhorse chip for training and running AI.">13</a></sup> reading the prompt and Taalas chips generating the answer</td><td>Not "GPU vs. custom chip" but a hybrid of the two</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="frame"><span class="tag">Marketing impact</span><p>On-device AI already stands between customers and us. The iOS 26 Mail app shows summaries generated by Apple Intelligence by default, so customers can read the summary without opening the email. Link Tracking Protection<sup class="fn"><a href="#g14" id="r14" title="Link Tracking Protection: An Apple feature that strips tracking tags from link addresses, making it harder to know who clicked where.">14</a></sup> strips tracking parameters from URLs in Safari, Mail and Messages. The AI's summary appears in place of the preview text we wrote, and click-based measurement gets harder. Stating the key point clearly in an email's first paragraph matters more than ever.</p></div>
+  <div class="frame"><span class="tag">Limits</span><p>Taalas's speed and power figures are all company claims and not independently verified. A hardwired chip can't change models, so a new model means a new chip. Qualcomm's 30 billion parameters assumes a MoE architecture that uses only part of the model at a time, and real-world speed varies by device.</p></div>
+  <div class="frame judge"><span class="tag a">Verdict</span><p><b>Check.</b> Open a recent promotional email in the iPhone Mail app and see what the AI summary says, and make sure you're judging performance on clicks, purchases and replies rather than open rates.</p></div>
+</section>
+
+<!-- 04 PLATFORM -->
+<section aria-labelledby="s4">
+  <p class="label">04 · Platform updates</p>
+  <h2 id="s4">Operational changes to check this week</h2>
+  <div class="alert">
+    <p class="h">Platform update alert</p>
+    <ul>
+      <li><b>Google Merchant Center<sup class="fn"><a href="#g15" id="r15" title="Google Merchant Center: Google&#x27;s tool for stores and brands to upload and manage product information (product feeds) for Google Search, Shopping and ads.">15</a></sup>:</b> Formatting guidance and a template for six "conversational attributes" that help AI understand products (question and answer, document link, related product, item group title, variant option, popularity rank) were expanded in September. They're optional and don't affect existing products' approval status. See the <a href="2026-10-22-marketer.html">Marketer Kit</a> for how to use them.</li>
+      <li><b>iOS 26 Mail and Messages:</b> AI summaries are on by default, and Link Tracking Protection strips tracking parameters from URLs. If any reporting depends on link parameters such as ad click identifiers, check for gaps.</li>
+      <li><b>Amazon:</b> Since Sept 21, Amazon has been blocking shopping by unauthorized AI agents, including Meta's Muse. If you plan to sell through agents, check each channel's policy first.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="cta">
+  <p class="h">Marketer Kit · Vol.02</p>
+  <p>A kit for putting this issue to work — <b>how five retailers handle AI agents · agent-readiness checklist · 30-minute exercise (draft Merchant Center conversational attributes from customer inquiries)</b>.</p>
+  <a href="2026-10-22-marketer.html">Open the Marketer Kit →</a>
+</div>
+
+<!-- GLOSSARY -->
+<section aria-labelledby="sg">
+  <p class="label">GLOSSARY</p>
+  <h2 id="sg" style="font-size:22px">Glossary</h2>
+  <ol class="gloss">
+    <li id="g1"><b>AI agent</b> Unlike a chatbot that only answers questions, an AI that takes a goal, breaks it into steps, uses apps and actually carries out the work. <a href="#r1" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g2"><b>Parameters</b> The numbers an AI model adjusts during training. More parameters usually means a bigger, more capable model that needs more computation. <a href="#r2" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g3"><b>Anthropic</b> The US AI company that makes the Claude models. The AI used to produce this newsletter is also one of its models. <a href="#r3" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g4"><b>LLM (large language model)</b> AI trained on vast amounts of text to understand and write like a person. The engine behind services like ChatGPT and Claude. <a href="#r4" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g5"><b>GitHub</b> The world&#x27;s largest site where developers post and share code. <a href="#r5" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g6"><b>Virtual machine (VM)</b> A second computer built in software inside a real one. What happens inside it can be kept from spreading to the computer outside. <a href="#r6" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g7"><b>MicroVM</b> A small virtual machine stripped down to start and stop very quickly. One is launched per user or job to keep them apart. <a href="#r7" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g8"><b>Region</b> A geographic unit where a cloud company groups its servers, e.g., the Tokyo region. <a href="#r8" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g9"><b>On-device AI</b> AI that runs directly on a device such as a phone or laptop, rather than on servers across the internet. <a href="#r9" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g10"><b>NPU</b> A dedicated chip (or area of a chip) built to run AI calculations quickly and with little power. Found in recent phones and laptops. <a href="#r10" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g11"><b>MoE (mixture of experts)</b> A design that splits a model into several &quot;expert&quot; parts and uses only some of them for each question. The whole model is large, but each answer takes less computation. <a href="#r11" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g12"><b>Token</b> The unit AI uses to process text (roughly a word fragment). Tokens per second is how fast an AI writes its answer. <a href="#r12" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g13"><b>GPU</b> Originally a graphics chip. Because it&#x27;s good at doing many calculations at once, it&#x27;s now the workhorse chip for training and running AI. <a href="#r13" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g14"><b>Link Tracking Protection</b> An Apple feature that strips tracking tags from link addresses, making it harder to know who clicked where. <a href="#r14" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g15"><b>Google Merchant Center</b> Google&#x27;s tool for stores and brands to upload and manage product information (product feeds) for Google Search, Shopping and ads. <a href="#r15" class="back" aria-label="Back to text">↩</a></li>
+  </ol>
+</section>
+
+<!-- SOURCES -->
+<section aria-labelledby="s9" style="border-bottom:0">
+  <p class="label">SOURCES</p>
+  <h2 id="s9" style="font-size:22px">Sources</h2>
+  <ol class="src">
+    <li><a href="https://the-decoder.com/anthropics-andrej-karpathy-says-the-external-world-has-seen-the-preview-of-what-ai-can-actually-do/">Anthropic's Andrej Karpathy says "the external world has seen the preview" — The Decoder (10/12)</a></li>
+    <li><a href="https://www.benzinga.com/markets/tech/26/10/62292803/andrej-karpathy-warns-ai-capability-gap-is-widening-as-advanced-agents-tackle-massive-projects">Andrej Karpathy warns AI capability gap is widening — Benzinga (10/12)</a></li>
+    <li><a href="https://axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude">OpenAI co-founder Andrej Karpathy joins Anthropic — Axios (5/19)</a></li>
+    <li><a href="https://aiweekly.co/alerts/openai-uploads-722-ai-math-preprints-three-pulled-next-day">OpenAI uploads 722 AI math preprints; three pulled next day — AI Weekly (10/15)</a></li>
+    <li><a href="https://supermetrics.com/blog/marketing-data-report-2026">2026 Marketing Data Report — Supermetrics (3/6)</a></li>
+    <li><a href="https://aws.amazon.com/about-aws/whats-new/2026/06/aws-lambda-microvms">AWS introduces Lambda MicroVMs for isolated execution of user and AI-generated code — AWS (6/22)</a></li>
+    <li><a href="https://about.fb.com/news/2026/09/introducing-muse">Introducing Muse — Meta (9/8)</a></li>
+    <li><a href="https://www.adweek.com/commerce/amazon-locks-out-metas-muse-in-agentic-shopping-standoff/">Amazon locks out Meta's Muse in agentic shopping standoff — Adweek (9/21)</a></li>
+    <li><a href="https://www.thestar.com.my/tech/tech-news/2026/09/22/amazon-blocks-metas-muse-ai-agent-from-its-retail-site">Amazon blocks Meta's Muse AI agent from its retail site — The Star (9/22)</a></li>
+    <li><a href="https://androidauthority.com/snapdragon-qualcomm-snapdragon-8-elite-gen-6-npu-3709726">Snapdragon 8 Elite Gen 6 NPU — Android Authority (9/10)</a></li>
+    <li><a href="https://www.vktr.com/ai-news/taalas-debuts-hard-wired-llama-chip-promising-10x-faster-ai-at-a-fraction-of-the-cost/">Taalas debuts hard-wired Llama chip — VKTR (2/23)</a></li>
+    <li><a href="https://siliconangle.com/?p=808891">AMD to acquire Taalas — SiliconANGLE (8/6)</a></li>
+    <li><a href="https://aiweekly.co/alerts/amd-acquires-taalas-startup-etching-ai-weights-into-silicon">AMD acquires Taalas, startup etching AI weights into silicon — AI Weekly (8/6)</a></li>
+    <li><a href="https://www.salesforce.com/blog/ios-android-marketing-updates/">New Rules of Engagement: A Marketer's Guide to iOS 26 and Android 16 Changes — Salesforce</a></li>
+    <li><a href="https://support.google.com/merchants/answer/17085370?hl=en">How to use conversational attributes — Google Merchant Center Help</a></li>
+    <li><a href="https://ppcnewsfeed.com/ppc-news/2026-09/merchant-center-expands-conversational-attribute-specs/">Merchant Center expands conversational attribute specs — PPC News Feed (9/16)</a></li>
+  </ol>
+</section>
+
+<footer>
+  <p>AI Trend Search is the English edition of a weekly AI newsletter for marketers, published every Thursday (KST). · <a href="../archive.html">Past issues</a> · <a href="https://hazajous-code.github.io/ai-newsletter-claude/trend/">Korean edition</a></p>
+  <p>Summaries of published reporting; figures are as reported by each source or claimed by the companies involved.</p>
+</footer>
+
+</div>
+<script>(function(){var h=document.documentElement,bs=document.querySelectorAll('.fsctl button');function set(v){h.classList.remove('fs-l','fs-xl');if(v)h.classList.add(v);bs.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.fs===v?'true':'false')});try{v?localStorage.setItem('fs',v):localStorage.removeItem('fs')}catch(e){}}var cur='';try{cur=localStorage.getItem('fs')||''}catch(e){}set(cur);bs.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.fs)})})})();</script>
+</body>
+</html>
