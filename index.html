@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI Trend Search · Vol.02</title>
-<meta name="description" content="Weekly AI trends for marketers — Vol.02: The external world has seen the preview.">
+<title>AI Trend Search · Vol.03</title>
+<meta name="description" content="Weekly AI trends for marketers — Vol.03: Ads now read the conversation. Can you put the situations customers confide to AI into your own words?">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
@@ -17,108 +17,98 @@
 <nav class="tabs" aria-label="Menu"><a href="index.html" class="on">Newsletter</a><a href="marketer.html">Marketer Kit</a><a href="news.html">Today's AI News</a><a href="archive.html">Past issues</a><a href="https://hazajous-code.github.io/ai-newsletter-claude/trend/" lang="ko">한국어</a><span class="fsctl" role="group" aria-label="Text size">Text size <button type="button" data-fs="">Normal</button><button type="button" data-fs="fs-l">Large</button><button type="button" data-fs="fs-xl">X-Large</button></span></nav>
 
 <header class="mast tight">
-  <div class="top"><span>AI TREND SEARCH — Weekly AI trends for marketers</span><span>Vol.02 · Oct 20, 2026 (Tue)</span></div>
-  <h1>The external world<br>has seen the <span>preview.</span></h1>
-  <p class="quote-by">— Andrej Karpathy, X post, Oct 11</p>
-  <p class="sub">A week that showed how unevenly people know AI. AI is spreading both into virtual computers in the cloud and into the chips in our phones. <b>You only see customer intent as clearly as you've used the AI your customers use.</b></p>
+  <div class="top"><span>AI TREND SEARCH — Weekly AI trends for marketers</span><span>Vol.03 · Oct 27, 2026 (Tue)</span></div>
+  <h1>Ads now read<br>the <span>conversation.</span></h1>
+  <p class="sub">A week in which ChatGPT ads expanded to 89 countries and two separate rules on AI-made product images arrived on the same day. The unit ads attach to is shifting from the search query to the customer's situation. <b>You need to be able to put what customers confide to AI into your own words.</b></p>
   <ul class="kw" aria-label="Keywords this issue">
-    <li class="f">AI capability gap</li><li>Karpathy</li><li class="f">VM agents</li><li>Sandboxes</li><li class="f">On-device AI</li><li>Hardwired chips</li><li>Agentic commerce</li><li>Conversational attributes</li>
+    <li class="f">ChatGPT ads</li><li class="f">Context hints</li><li>Intent in conversation</li><li class="f">AI image disclosure</li><li>Pennsylvania SB 806</li><li>Etsy</li><li>Canva Craft</li><li>Claude Duet</li>
   </ul>
 </header>
 
 <div class="tldr">
   <h2>This issue in three lines</h2>
   <ol>
-    <li><b>AI capability gap:</b> Karpathy sees people's experience of AI narrowing like a funnel — 6 billion → 1–2 billion → 20 million → 5,000. The same gap opens up inside marketing teams.</li>
-    <li><b>VM agents<sup class="fn"><a href="#g1" id="r1" title="AI agent: Unlike a chatbot that only answers questions, an AI that takes a goal, breaks it into steps, uses apps and actually carries out the work.">1</a></sup>:</b> Agents now work for hours inside isolated virtual computers. Those agents have started visiting our sites on customers' behalf, and Amazon has blocked Meta's Muse.</li>
-    <li><b>AI moves onto chips:</b> Phone chips run models of up to 30 billion parameters<sup class="fn"><a href="#g2" id="r2" title="Parameters: The numbers an AI model adjusts during training. More parameters usually means a bigger, more capable model that needs more computation.">2</a></sup>, and AMD agreed to buy a company that etches models directly into silicon. On-device AI reads and summarizes customers' email and notifications first. For practical steps, see the <a href="marketer.html">Marketer Kit</a> tab.</li>
+    <li><b>ChatGPT ads in 89 countries:</b> On Oct 21, OpenAI opened ads in 26 more countries and said more than 100,000 advertisers have run campaigns in a little over eight months. Ads are matched to conversations not by keywords but by "context hints<sup class="fn"><a href="#g1" id="r1" title="Context hint: In ChatGPT ads, a sentence in which the advertiser describes what kind of customer situation the ad fits. It takes the place of a keyword in search ads, but isn't a rule that requires those exact words to appear.">1</a></sup>."</li>
+    <li><b>Rules for AI images:</b> On Oct 22, Etsy began requiring one unedited photo of the real item in every listing, and the US state of Pennsylvania signed a law requiring disclosure on AI ads that mislead consumers. The test isn't "did you use AI?" but "does it mislead customers about what they'll get?"</li>
+    <li><b>Features are leveling out:</b> Canva released its own image generation model<sup class="fn"><a href="#g2" id="r2" title="Image generation model: AI that creates pictures, photos or designs from a text description. Many companies now offer models that do the same job.">2</a></sup>, and Anthropic unveiled a personal AI agent<sup class="fn"><a href="#g3" id="r3" title="AI agent: Unlike a chatbot that only answers questions, an AI that takes a goal, breaks it into steps, uses apps and actually carries out the work.">3</a></sup> that speaks up first. For practical steps, see the <a href="marketer.html">Marketer Kit</a> tab.</li>
   </ol>
-  <p class="jump">Jump to <a href="#s1">01 Capability gap</a><a href="#s2">02 VM agents</a><a href="#s3">03 Chip AI</a><a href="#s4">04 Platforms</a><a href="marketer.html">Marketer Kit →</a> <span class="muted">· about 10 min read</span></p>
+  <p class="jump">Jump to <a href="#s1">01 ChatGPT ads</a><a href="#s2">02 AI image rules</a><a href="#s3">03 Briefs</a><a href="#s4">04 Platforms</a><a href="marketer.html">Marketer Kit →</a> <span class="muted">· about 10 min read</span></p>
 </div>
 
 <section aria-labelledby="hero-essay">
   <p class="label">EDITOR'S NOTE</p>
-  <h2 id="hero-essay">How much have we used the AI our customers use?</h2>
-  <p class="lede">On Oct 11, Andrej Karpathy wrote on X: "The external world has seen the preview." Most people know AI as a free chatbot; only a tiny few have experienced the most advanced systems.</p>
-  <p>Marketers are no exception. Someone who stopped at asking a chatbot instead of searching, or getting draft copy, and someone who has handed an agent hours of work will draw different conclusions from the same news.</p>
-  <p>Meanwhile, customers are moving first. Their agents open our sites inside virtual computers, and their phones summarize the emails we send before they read them. Customer intent increasingly reaches us through AI. In our view, the only way to read that intent is to use the AI customers use ourselves.</p>
-  <p class="pull">You only see customer intent as clearly as you've used the AI your customers use.</p>
+  <h2 id="hero-essay">Into a search box we type words; into a chat we tell our story</h2>
+  <p class="lede">In a search box, we type "running shoes." To a chatbot, we write: "I'm running my first 5K next month — what are some comfortable beginner shoes?" (hypothetical example). The example OpenAI gives advertisers shows exactly this difference.</p>
+  <p>Ad formats, bidding and image generation are features platforms open to everyone equally. Whether you know the customer's situation in the conversation — when, who and why they need the product — in the customer's own words differs from company to company.</p>
+  <p>The AI image rules that came out the same week point to the same place. What customers want to know is whether the item in the photo is what will actually arrive.</p>
+  <p class="pull">Can we write down, in the customer's own words, the situations customers confide to AI?</p>
   <p class="muted">※ This is the editorial view of this issue, not a proven fact.</p>
 </section>
 
 <!-- 01 TREND -->
 <section class="framed" aria-labelledby="s1">
   <p class="label">01 · Key trend</p>
-  <h2 id="s1">How well people know AI has split into four tiers</h2>
+  <h2 id="s1">ChatGPT ads in 89 countries — attached to situations, not keywords</h2>
 
-  <div class="frame"><span class="tag">What changed</span><p>Andrej Karpathy, an Anthropic<sup class="fn"><a href="#g3" id="r3" title="Anthropic: The US AI company that makes the Claude models. The AI used to produce this newsletter is also one of its models.">3</a></sup> researcher and OpenAI co-founder, wrote in an Oct 11 post on X that people's experience of AI narrows like a funnel, and that the gap is widening.</p></div>
+  <div class="frame"><span class="tag">What changed</span><p>On Oct 21, OpenAI announced it had added 26 countries to ChatGPT ads, bringing the total to 89. It said that <b>more than 100,000 advertisers have run campaigns</b> in the little over eight months since ads launched. A pilot has been open in Korea since June 19.</p></div>
 
   <div class="tblwrap">
   <table class="tbl">
-    <thead><tr><th>Tier</th><th>Size (Karpathy's estimate)</th><th>The AI they see</th></tr></thead>
+    <thead><tr><th>Item</th><th>Details</th></tr></thead>
     <tbody>
-      <tr><td>Barely used it</td><td>About 6 billion</td><td>Little contact with LLMs<sup class="fn"><a href="#g4" id="r4" title="LLM (large language model): AI trained on vast amounts of text to understand and write like a person. The engine behind services like ChatGPT and Claude.">4</a></sup></td></tr>
-      <tr><td>Casual free-tier users</td><td>1–2 billion</td><td>"A better Google search" or a writing aid</td></tr>
-      <tr><td>Professionals on frontier models</td><td>About 20 million</td><td>Mostly math and software experts, handling work that used to take weeks or months</td></tr>
-      <tr><td>Most advanced internal systems</td><td>About 5,000</td><td>Thousands of agents collaborating for weeks on large software projects</td></tr>
+      <tr><td>Who sees them</td><td>Adult users on the Free and Go plans. No ads on higher paid plans such as Plus, Pro and Enterprise</td></tr>
+      <tr><td>Where they appear</td><td>Ads labeled "Sponsored," separate from the answer. OpenAI says "ads do not influence the answers ChatGPT gives you"</td></tr>
+      <tr><td>Where they don't appear</td><td>Conversations on sensitive topics such as health, mental health and politics; accounts confirmed or predicted to belong to minors</td></tr>
+      <tr><td>How to buy</td><td>Through technology partners or directly in Ads Manager (self-serve<sup class="fn"><a href="#g4" id="r4" title="Self-serve: A setup in which advertisers create ads and set budgets themselves in a management dashboard, without going through a sales rep.">4</a></sup>). CPM and CPC<sup class="fn"><a href="#g5" id="r5" title="CPM and CPC: Ways of pricing ads. With CPM you pay each time an ad is shown 1,000 times; with CPC you pay each time it's clicked.">5</a></sup> bidding at existing market rates; measurement via pixel and Conversions API<sup class="fn"><a href="#g6" id="r6" title="Pixel and Conversions API: Tools that tell an ad platform whether someone who saw an ad bought or signed up on your site. A pixel is code placed on a web page; a Conversions API sends the data directly from server to server.">6</a></sup></td></tr>
+      <tr><td>Privacy</td><td>Conversation content isn't shared with advertisers; only aggregate metrics such as views and clicks are provided</td></tr>
     </tbody>
   </table>
   </div>
-  <p class="muted">※ The numbers are Karpathy's rough estimates, not survey results.</p>
+  <p class="muted">※ Based on reporting of OpenAI's Oct 21 announcement and coverage of the Korean launch (June 19). Country-specific terms for the 26 new countries were not disclosed.</p>
 
-  <div class="frame"><span class="tag">Evidence</span><p>Karpathy said AI is improving fastest in domains that are <b>digital, verifiable and economically valuable</b> — coding and math. He also warned that "human review and comprehension are starting to fall behind."</p><p>The same week offered a real example: on Oct 6, OpenAI posted 722 math manuscripts written with an unreleased model to GitHub<sup class="fn"><a href="#g5" id="r5" title="GitHub: The world&#x27;s largest site where developers post and share code.">5</a></sup>, and the next day withdrew three of them because of a single sign error. It laid bare the gap between how fast AI produces results and how fast people can check them.</p></div>
+  <div class="frame"><span class="tag">Evidence</span><p>OpenAI's ads help page advises grouping ad groups not only by product line or service but by <b>"customer need."</b> The context hints inside each group are sentences that spell out "what is useful, to whom, and when." The help page's example replaces "running shoes" with "cushioned everyday running shoes for beginners training for their first 5K."</p><p>OpenAI says hints are <b>not exact-match keywords<sup class="fn"><a href="#g7" id="r7" title="Exact-match keyword: A search ad setting that shows the ad only when a customer searches for the exact words you specified.">7</a></sup> or targeting rules</b>, and don't guarantee placement in any particular conversation. It advises splitting groups when different uses need different messages or landing pages, giving the example of a plumber keeping "emergency repairs" and "routine maintenance" separate.</p></div>
 
-  <div class="frame"><span class="tag">Marketing impact</span><p>The gap exists inside teams too. In a Supermetrics survey released in March (435 brand and agency marketers in the US, UK, Germany, Australia and Singapore), <b>80% said they feel pressure to adopt AI, but only 6% had fully implemented AI in their work</b>. Most of the pressure (89%) came from the C-suite and board.</p><p>If customers start shopping through agents while a team is still at the free-chatbot stage, it's hard to imagine what customers are actually doing.</p></div>
-  <div class="frame"><span class="tag">Limits</span><p>Karpathy has worked at Anthropic since May, so his description of "internal systems" is a view from inside an AI company. The actual capabilities of those systems haven't been verified externally. Supermetrics sells marketing data tools, so its sample may overlap with its customer base.</p></div>
-  <div class="frame judge"><span class="tag a">Verdict</span><p><b>Do this week.</b> Find out which tier each team member has reached, and book time for the team to try the AI shopping and search features your customers use, together.</p></div>
+  <div class="frame"><span class="tag">Marketing impact</span><p>According to CNBC, the annualized revenue<sup class="fn"><a href="#g8" id="r8" title="Annualized revenue (run rate): Revenue from a short period, such as the latest month, converted into a full-year figure by assuming it continues all year.">8</a></sup> of ChatGPT's ad business grew from $100 million in March to $1 billion in August. On a channel advertisers are flocking to, the unit of ad planning shifts from a "list of search terms" to <b>a "list of situations customers are in."</b></p><p>Keyword tools don't produce that list of situations. It comes from material in which customers describe their circumstances in their own words: customer inquiries, reviews and support logs.</p></div>
+  <div class="frame"><span class="tag">Limits</span><p>The 100,000 figure is a cumulative count of advertisers that have run campaigns; the number currently active hasn't been disclosed (The Information reported about 20,000 active advertisers at the end of August). OpenAI hasn't published performance metrics by industry, and the cost per click reported by early advertisers ranges widely, from under $3 to $10–13. Ads aren't shown to users on higher paid plans, so they may not reach the users who rely on ChatGPT most heavily for work (editorial judgment).</p></div>
+  <div class="frame judge"><span class="tag a">Verdict</span><p><b>Check now.</b> Whether or not you run ads, check whether you can write down five "situation sentences" that customers actually used about one flagship product. If you can't, customer inquiry data comes before the ad channel. The exercise is in the <a href="marketer.html">Marketer Kit</a>.</p></div>
 </section>
 
-<!-- 02 AGENT -->
+<!-- 02 AI IMAGE RULES -->
 <section class="framed" aria-labelledby="s2">
-  <p class="label">02 · Agents</p>
-  <h2 id="s2">Agents running in VMs — giving AI a computer of its own</h2>
+  <p class="label">02 · Rules</p>
+  <h2 id="s2">AI-made product images mustn't pass as the real thing</h2>
 
-  <div class="frame"><span class="tag">What changed</span><p>A chatbot only answers inside a chat window. Today's agents get an isolated <b>virtual machine<sup class="fn"><a href="#g6" id="r6" title="Virtual machine (VM): A second computer built in software inside a real one. What happens inside it can be kept from spreading to the computer outside.">6</a></sup></b> — a computer in the cloud — and inside it they open websites, create files and work for hours. Think of it as giving the AI its own office PC.</p></div>
+  <div class="frame"><span class="tag">What changed</span><p>On a single day, Oct 22, rules came from two places. Handmade marketplace Etsy changed its listing rules for sellers, and Pennsylvania's governor signed an AI ad disclosure law (SB 806, the Artificial Intelligence Deceptive Advertising Act).</p></div>
 
   <div class="tblwrap">
   <table class="tbl">
-    <thead><tr><th>Compare</th><th>Chatbot</th><th>VM agent</th></tr></thead>
+    <thead><tr><th>Item</th><th>Etsy (announced Oct 22)</th><th>Pennsylvania SB 806 (signed Oct 22)</th></tr></thead>
     <tbody>
-      <tr><td>Isolation</td><td>Answers in text inside the chat window</td><td>Does real work on a separate computer. Mistakes don't spread to your PC or other people's work</td></tr>
-      <tr><td>Persistence</td><td>Ends when the conversation ends</td><td>Work state persists, so it can keep going for hours</td></tr>
-      <tr><td>Permissions</td><td>Outputs text only</td><td>Can click, log in and even pay. What you allow is the key question</td></tr>
+      <tr><td>Scope</td><td>Items listed on Etsy</td><td>Ads in which AI-generated or substantially altered images, video or audio mislead consumers about a product's nature, origin or authenticity</td></tr>
+      <tr><td>Requirement</td><td>At least one unedited photo of the actual item in a real setting. Instructional items such as patterns and recipes may not be AI-generated and must show a real finished result. No bot listings without human involvement</td><td>A disclosure stating the ad "contains content modified or generated by AI," shown when the content first appears, in the same medium, and where possible hard to remove</td></tr>
+      <tr><td>Exceptions</td><td>AI-assisted images that accurately show the real item may be added</td><td>Obvious fiction; parody, satire and commentary; text-only content</td></tr>
+      <tr><td>If violated</td><td>If a buyer reports an item "not as described" and the image requirements weren't met, the seller may have to issue a refund</td><td>Fines of up to $3,000 and injunctions. Enforced only by the state attorney general and district attorneys</td></tr>
+      <tr><td>Effective</td><td>Date not disclosed. Enforcement to be tested and expanded "in the coming months"</td><td>60 days after signing (Dec 21, per law firm Loeb &amp; Loeb's analysis)</td></tr>
     </tbody>
   </table>
   </div>
 
-  <div class="frame"><span class="tag">Evidence</span><p>On June 22, AWS released Lambda MicroVMs. It runs user- or AI-generated code in a separate <b>microVM<sup class="fn"><a href="#g7" id="r7" title="MicroVM: A small virtual machine stripped down to start and stop very quickly. One is launched per user or job to keep them apart.">7</a></sup></b> for each user or job, and can suspend and resume with state preserved for up to eight hours. It launched in five regions<sup class="fn"><a href="#g8" id="r8" title="Region: A geographic unit where a cloud company groups its servers, e.g., the Tokyo region.">8</a></sup>, including Tokyo. </p><p>Meta's Muse, covered last issue, also runs inside a dedicated per-user virtual machine (Muse Secure VM).</p></div>
+  <div class="frame"><span class="tag">Evidence</span><p>James Osman, Etsy's vice president of customer operations, called the change "a starting point, not a finish line." Etsy said it is also looking at ways to tell buyers whether AI was used. Pennsylvania's law dropped the draft's condition that it apply "only when knowing or reckless," so the test is whether it created a false impression, regardless of intent.</p><p>Korea has a background rule. Since June 1, Korea's Fair Trade Commission has enforced revised guidelines on endorsements and testimonials: when an AI-generated virtual person appears in an ad, it must be labeled a "virtual person" near the figure or at the start of the post.</p></div>
 
-  <div class="frame"><span class="tag">Marketing impact</span><p>These agents are walking into stores on customers' behalf. On Sept 21, Amazon blocked Meta's Muse. Amazon said Muse came in without notice or permission, doesn't identify itself as an agent, and stores customers' login credentials and scrapes account data. Meta did not respond to press requests for comment.</p><p><b>Whether a visitor to your site is a person or an agent, and what to let agents do, has become a marketing question.</b></p></div>
-  <div class="frame"><span class="tag">Limits</span><p>The AWS launch is a runtime for developers, and the announcement doesn't use the phrase "AI agents" (its stated uses include running AI-generated code and coding assistants). Amazon's claims are one side of the story, and Amazon is also a competitor building its own shopping assistant.</p></div>
-  <div class="frame judge"><span class="tag a">Verdict</span><p><b>Decide.</b> Start by deciding whether outside AI agents may come into your site or store to browse and pay, and who makes that call. A practical checklist is in the <a href="marketer.html">Marketer Kit</a>.</p></div>
+  <div class="frame"><span class="tag">Marketing impact</span><p>None of the three rules bans the use of AI itself. What they bar is <b>misleading customers about the item they'll receive or the experience they'll believe in</b>. Teams that make product images and model shots with AI should check against one test: "Would a customer who bought from this image be surprised when the real item arrives?"</p></div>
+  <div class="frame"><span class="tag">Limits</span><p>The Pennsylvania law applies to ads seen in that state; Korean advertisers are directly affected only in campaigns targeting the US. Concrete standards for what counts as "misleading" will emerge only as enforcement cases appear. Etsy hasn't disclosed its effective date or how existing listings will be handled.</p></div>
+  <div class="frame judge"><span class="tag a">Verdict</span><p><b>Prepare.</b> Make a list of product and model images created or substantially altered with AI, and mark for each whether a real photo accompanies it and whether a production record exists.</p></div>
 </section>
 
-<!-- 03 CHIP -->
-<section class="framed" aria-labelledby="s3">
-  <p class="label">03 · Chips</p>
-  <h2 id="s3">AI moves onto chips — AI inside devices, and AI etched into silicon</h2>
-
-  <div class="frame"><span class="tag">What changed</span><p>"AI running on a chip" means two different things. One is <b>on-device AI<sup class="fn"><a href="#g9" id="r9" title="On-device AI: AI that runs directly on a device such as a phone or laptop, rather than on servers across the internet.">9</a></sup></b>, running inside phones and laptops; the other is the <b>hardwired chip</b>, with a single AI model etched into the circuitry. Neither is replacing the cloud so much as splitting the work with it.</p></div>
-
-  <div class="tblwrap">
-  <table class="tbl">
-    <thead><tr><th>Branch</th><th>Recent news</th><th>What it means</th></tr></thead>
-    <tbody>
-      <tr><td>On-device AI</td><td>Qualcomm said the NPU<sup class="fn"><a href="#g10" id="r10" title="NPU: A dedicated chip (or area of a chip) built to run AI calculations quickly and with little power. Found in recent phones and laptops.">10</a></sup> in its Snapdragon 8 Elite Gen 6, unveiled in September, can run models of up to 30 billion parameters on the device using a MoE<sup class="fn"><a href="#g11" id="r11" title="MoE (mixture of experts): A design that splits a model into several &quot;expert&quot; parts and uses only some of them for each question. The whole model is large, but each answer takes less computation.">11</a></sup> architecture</td><td>More work handled directly on the phone, without a connection and without sending data out</td></tr>
-      <tr><td>Hardwired chips</td><td>Canadian startup Taalas unveiled HC1 in February, a chip with the entire Llama 3.1 8B model etched in. It claims about 17,000 tokens<sup class="fn"><a href="#g12" id="r12" title="Token: The unit AI uses to process text (roughly a word fragment). Tokens per second is how fast an AI writes its answer.">12</a></sup> per second. Its next chip, HC2, targets models of about 20 billion parameters</td><td>Runs only one fixed model, but fast and with less power</td></tr>
-      <tr><td>Industry moves</td><td>AMD announced it will acquire Taalas on Aug 6 (terms undisclosed; closes after regulatory approval). It envisions GPUs<sup class="fn"><a href="#g13" id="r13" title="GPU: Originally a graphics chip. Because it&#x27;s good at doing many calculations at once, it&#x27;s now the workhorse chip for training and running AI.">13</a></sup> reading the prompt and Taalas chips generating the answer</td><td>Not "GPU vs. custom chip" but a hybrid of the two</td></tr>
-    </tbody>
-  </table>
-  </div>
-
-  <div class="frame"><span class="tag">Marketing impact</span><p>On-device AI already stands between customers and us. The iOS 26 Mail app shows summaries generated by Apple Intelligence by default, so customers can read the summary without opening the email. Link Tracking Protection<sup class="fn"><a href="#g14" id="r14" title="Link Tracking Protection: An Apple feature that strips tracking tags from link addresses, making it harder to know who clicked where.">14</a></sup> strips tracking parameters from URLs in Safari, Mail and Messages.</p><p>The AI's summary appears in place of the preview text we wrote, and click-based measurement gets harder. <b>Stating the key point clearly in an email's first paragraph matters more than ever.</b></p></div>
-  <div class="frame"><span class="tag">Limits</span><p>Taalas's speed and power figures are all company claims and not independently verified. A hardwired chip can't change models, so a new model means a new chip. Qualcomm's 30 billion parameters assumes a MoE architecture that uses only part of the model at a time, and real-world speed varies by device.</p></div>
-  <div class="frame judge"><span class="tag a">Verdict</span><p><b>Check.</b> Open a recent promotional email in the iPhone Mail app and see what the AI summary says, and make sure you're judging performance on clicks, purchases and replies rather than open rates.</p></div>
+<!-- 03 BRIEFS -->
+<section aria-labelledby="s3">
+  <p class="label">03 · Briefs</p>
+  <h2 id="s3">Also worth a look</h2>
+  <ul class="briefs">
+    <li><b>Canva unveils its first in-house image model, "Craft" (Oct 22)</b>A planning model first lays out the composition and any text to include, then a rendering model draws images of up to 2K. Canva said it was trained not on photos but on millions of Canva templates, and can place text in 55 languages. By Canva's count, it debuted fourth on the design comparison leaderboard<sup class="fn"><a href="#g9" id="r9" title="Leaderboard: A ranking of AI models based on people voting between their outputs side by side.">9</a></sup> DesignArena (the top three are all OpenAI models), and it's open to all users. Canva cited cost as the reason for its own model: "a few cents' difference per generation is a huge difference." In our view, image generation is becoming a standard feature of every design tool.</li>
+    <li><b>Anthropic's "Claude Duet," an agent that speaks up first (Oct 21)</b>It checks connected apps every few hours to flag things to handle and sends a short briefing every morning. It works with its own browser in a cloud virtual machine<sup class="fn"><a href="#g10" id="r10" title="Virtual machine (VM): A second computer built in software inside a real one. What happens inside it can be kept from spreading to the computer outside.">10</a></sup>, and asks for approval before sending messages, paying, signing or deleting files. It's a waitlist-based research preview<sup class="fn"><a href="#g11" id="r11" title="Research preview: A trial version opened to some users before official launch to gauge their response.">11</a></sup> for US Pro and Max subscribers. It joins Meta's Muse and OpenAI's Dots in a race for "proactive" agents. If an agent scans a customer's inbox first and picks the "things to handle," our messages go through that filter too (editorial judgment).</li>
+  </ul>
+  <p class="muted">※ Anthropic makes the AI used to write this newsletter.</p>
 </section>
 
 <!-- 04 PLATFORM -->
@@ -128,16 +118,17 @@
   <div class="alert">
     <p class="h">Platform update alert</p>
     <ul>
-      <li><b>Google Merchant Center<sup class="fn"><a href="#g15" id="r15" title="Google Merchant Center: Google&#x27;s tool for stores and brands to upload and manage product information (product feeds) for Google Search, Shopping and ads.">15</a></sup>:</b> Formatting guidance and a template for six "conversational attributes" that help AI understand products (question and answer, document link, related product, item group title, variant option, popularity rank) were expanded in September. They're optional and don't affect existing products' approval status. See the <a href="marketer.html">Marketer Kit</a> for how to use them.</li>
-      <li><b>iOS 26 Mail and Messages:</b> AI summaries are on by default, and Link Tracking Protection strips tracking parameters from URLs. If any reporting depends on link parameters such as ad click identifiers, check for gaps.</li>
-      <li><b>Amazon:</b> Since Sept 21, Amazon has been blocking shopping by unauthorized AI agents, including Meta's Muse. If you plan to sell through agents, check each channel's policy first.</li>
+      <li><b>ChatGPT ads:</b> Expanded to 89 countries (Oct 21). In Korea, a pilot for adult users on the Free and Go plans has run since June 19. Buying is through technology partners or Ads Manager self-serve; country-specific minimum budgets and billing currencies weren't in the announcement.</li>
+      <li><b>Pennsylvania SB 806:</b> Takes effect 60 days after signing. If you use AI-made product images, video or audio in campaigns targeting the US, check the disclosure wording requirements.</li>
+      <li><b>Etsy seller rules:</b> One unedited photo of the real item per listing; no AI-generated patterns or recipes. If you sell on Etsy, review the photos in your existing listings.</li>
+      <li><b>Korea FTC virtual-person labeling (in force since June 1, background):</b> If an AI virtual person appears in an ad, a "virtual person" label is required, and even with the label, presenting it as a real experience can count as unfair advertising.</li>
     </ul>
   </div>
 </section>
 
 <div class="cta">
-  <p class="h">Marketer Kit · Vol.02</p>
-  <p>A kit for putting this issue to work — <b>how five retailers handle AI agents · agent-readiness checklist · 30-minute exercise (draft Merchant Center conversational attributes from customer inquiries)</b>.</p>
+  <p class="h">Marketer Kit · Vol.03</p>
+  <p>A kit for putting this issue to work — <b>Lowe's Mylow and its 25 million customer questions · "situation sentence" checklist · 25-minute exercise (draft context hints from customer inquiries)</b>.</p>
   <a href="marketer.html">Open the Marketer Kit →</a>
 </div>
 
@@ -146,21 +137,17 @@
   <p class="label">GLOSSARY</p>
   <h2 id="sg" style="font-size:22px">Glossary</h2>
   <ol class="gloss">
-    <li id="g1"><b>AI agent</b> Unlike a chatbot that only answers questions, an AI that takes a goal, breaks it into steps, uses apps and actually carries out the work. <a href="#r1" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g2"><b>Parameters</b> The numbers an AI model adjusts during training. More parameters usually means a bigger, more capable model that needs more computation. <a href="#r2" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g3"><b>Anthropic</b> The US AI company that makes the Claude models. The AI used to produce this newsletter is also one of its models. <a href="#r3" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g4"><b>LLM (large language model)</b> AI trained on vast amounts of text to understand and write like a person. The engine behind services like ChatGPT and Claude. <a href="#r4" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g5"><b>GitHub</b> The world&#x27;s largest site where developers post and share code. <a href="#r5" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g6"><b>Virtual machine (VM)</b> A second computer built in software inside a real one. What happens inside it can be kept from spreading to the computer outside. <a href="#r6" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g7"><b>MicroVM</b> A small virtual machine stripped down to start and stop very quickly. One is launched per user or job to keep them apart. <a href="#r7" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g8"><b>Region</b> A geographic unit where a cloud company groups its servers, e.g., the Tokyo region. <a href="#r8" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g9"><b>On-device AI</b> AI that runs directly on a device such as a phone or laptop, rather than on servers across the internet. <a href="#r9" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g10"><b>NPU</b> A dedicated chip (or area of a chip) built to run AI calculations quickly and with little power. Found in recent phones and laptops. <a href="#r10" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g11"><b>MoE (mixture of experts)</b> A design that splits a model into several &quot;expert&quot; parts and uses only some of them for each question. The whole model is large, but each answer takes less computation. <a href="#r11" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g12"><b>Token</b> The unit AI uses to process text (roughly a word fragment). Tokens per second is how fast an AI writes its answer. <a href="#r12" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g13"><b>GPU</b> Originally a graphics chip. Because it&#x27;s good at doing many calculations at once, it&#x27;s now the workhorse chip for training and running AI. <a href="#r13" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g14"><b>Link Tracking Protection</b> An Apple feature that strips tracking tags from link addresses, making it harder to know who clicked where. <a href="#r14" class="back" aria-label="Back to text">↩</a></li>
-    <li id="g15"><b>Google Merchant Center</b> Google&#x27;s tool for stores and brands to upload and manage product information (product feeds) for Google Search, Shopping and ads. <a href="#r15" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g1"><b>Context hint</b> In ChatGPT ads, a sentence in which the advertiser describes what kind of customer situation the ad fits. It takes the place of a keyword in search ads, but isn't a rule that requires those exact words to appear. <a href="#r1" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g2"><b>Image generation model</b> AI that creates pictures, photos or designs from a text description. Many companies now offer models that do the same job. <a href="#r2" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g3"><b>AI agent</b> Unlike a chatbot that only answers questions, an AI that takes a goal, breaks it into steps, uses apps and actually carries out the work. <a href="#r3" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g4"><b>Self-serve</b> A setup in which advertisers create ads and set budgets themselves in a management dashboard, without going through a sales rep. <a href="#r4" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g5"><b>CPM and CPC</b> Ways of pricing ads. With CPM you pay each time an ad is shown 1,000 times; with CPC you pay each time it's clicked. <a href="#r5" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g6"><b>Pixel and Conversions API</b> Tools that tell an ad platform whether someone who saw an ad bought or signed up on your site. A pixel is code placed on a web page; a Conversions API sends the data directly from server to server. <a href="#r6" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g7"><b>Exact-match keyword</b> A search ad setting that shows the ad only when a customer searches for the exact words you specified. <a href="#r7" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g8"><b>Annualized revenue (run rate)</b> Revenue from a short period, such as the latest month, converted into a full-year figure by assuming it continues all year. <a href="#r8" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g9"><b>Leaderboard</b> A ranking of AI models based on people voting between their outputs side by side. <a href="#r9" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g10"><b>Virtual machine (VM)</b> A second computer built in software inside a real one. What happens inside it can be kept from spreading to the computer outside. <a href="#r10" class="back" aria-label="Back to text">↩</a></li>
+    <li id="g11"><b>Research preview</b> A trial version opened to some users before official launch to gauge their response. <a href="#r11" class="back" aria-label="Back to text">↩</a></li>
   </ol>
 </section>
 
@@ -169,22 +156,19 @@
   <p class="label">SOURCES</p>
   <h2 id="s9" style="font-size:22px">Sources</h2>
   <ol class="src">
-    <li><a href="https://the-decoder.com/anthropics-andrej-karpathy-says-the-external-world-has-seen-the-preview-of-what-ai-can-actually-do/">Anthropic's Andrej Karpathy says "the external world has seen the preview" — The Decoder (10/12)</a></li>
-    <li><a href="https://www.benzinga.com/markets/tech/26/10/62292803/andrej-karpathy-warns-ai-capability-gap-is-widening-as-advanced-agents-tackle-massive-projects">Andrej Karpathy warns AI capability gap is widening — Benzinga (10/12)</a></li>
-    <li><a href="https://axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude">OpenAI co-founder Andrej Karpathy joins Anthropic — Axios (5/19)</a></li>
-    <li><a href="https://aiweekly.co/alerts/openai-uploads-722-ai-math-preprints-three-pulled-next-day">OpenAI uploads 722 AI math preprints; three pulled next day — AI Weekly (10/15)</a></li>
-    <li><a href="https://supermetrics.com/blog/marketing-data-report-2026">2026 Marketing Data Report — Supermetrics (3/6)</a></li>
-    <li><a href="https://aws.amazon.com/about-aws/whats-new/2026/06/aws-lambda-microvms">AWS introduces Lambda MicroVMs for isolated execution of user and AI-generated code — AWS (6/22)</a></li>
-    <li><a href="https://about.fb.com/news/2026/09/introducing-muse">Introducing Muse — Meta (9/8)</a></li>
-    <li><a href="https://www.adweek.com/commerce/amazon-locks-out-metas-muse-in-agentic-shopping-standoff/">Amazon locks out Meta's Muse in agentic shopping standoff — Adweek (9/21)</a></li>
-    <li><a href="https://www.thestar.com.my/tech/tech-news/2026/09/22/amazon-blocks-metas-muse-ai-agent-from-its-retail-site">Amazon blocks Meta's Muse AI agent from its retail site — The Star (9/22)</a></li>
-    <li><a href="https://androidauthority.com/snapdragon-qualcomm-snapdragon-8-elite-gen-6-npu-3709726">Snapdragon 8 Elite Gen 6 NPU — Android Authority (9/10)</a></li>
-    <li><a href="https://www.vktr.com/ai-news/taalas-debuts-hard-wired-llama-chip-promising-10x-faster-ai-at-a-fraction-of-the-cost/">Taalas debuts hard-wired Llama chip — VKTR (2/23)</a></li>
-    <li><a href="https://siliconangle.com/?p=808891">AMD to acquire Taalas — SiliconANGLE (8/6)</a></li>
-    <li><a href="https://aiweekly.co/alerts/amd-acquires-taalas-startup-etching-ai-weights-into-silicon">AMD acquires Taalas, startup etching AI weights into silicon — AI Weekly (8/6)</a></li>
-    <li><a href="https://www.salesforce.com/blog/ios-android-marketing-updates/">New Rules of Engagement: A Marketer's Guide to iOS 26 and Android 16 Changes — Salesforce</a></li>
-    <li><a href="https://support.google.com/merchants/answer/17085370?hl=en">How to use conversational attributes — Google Merchant Center Help</a></li>
-    <li><a href="https://ppcnewsfeed.com/ppc-news/2026-09/merchant-center-expands-conversational-attribute-specs/">Merchant Center expands conversational attribute specs — PPC News Feed (9/16)</a></li>
+    <li><a href="https://ppc.land/advertisers-in-26-more-countries-gain-chatgpt-ads-bringing-the-total-to-89/">Advertisers in 26 more countries gain ChatGPT ads, bringing the total to 89 — PPC Land (summary of OpenAI's 10/21 announcement)</a></li>
+    <li><a href="https://thenextweb.com/news/chatgpt-ads-89-countries-100000-advertisers">ChatGPT ads reach 89 countries as OpenAI passes 100,000 advertisers — The Next Web (10/21)</a></li>
+    <li><a href="https://mobile.newsis.com/view/NISX20260619_0003676377">ChatGPT ads come to Korea too… for adults on free and low-cost plans — Newsis (Korean) (6/19)</a></li>
+    <li><a href="https://help.openai.com/en/articles/20001211-creating-and-managing-ads">Create ad groups for ChatGPT (context hints) — OpenAI Help Center</a></li>
+    <li><a href="https://www.mediapost.com/publications/article/417746/chatgpt-ad-results-are-not-yet-clear.html">ChatGPT Ad Results Are Not Yet Clear — MediaPost (9/9)</a></li>
+    <li><a href="https://www.retaildive.com/news/etsy-updates-ai-use-policies-emphasize-craftsmanship/833838/">Etsy updates AI use policies to emphasize craftsmanship — Retail Dive (10/23)</a></li>
+    <li><a href="https://ppc.land/etsy-forces-sellers-to-show-one-unaltered-photo-in-every-listing">Etsy forces sellers to show one unaltered photo in every listing — PPC Land (10/25)</a></li>
+    <li><a href="https://www.wpxi.com/news/local/law-requiring-advertisers-disclose-when-they-are-using-ai-passes-pennsylvania/BYUPMQRUHFB27GXBLVHFXPZEKE/">Law requiring advertisers to disclose when they are using AI passes in Pennsylvania — WPXI (10/22)</a></li>
+    <li><a href="https://www.loeb.com/en/insights/passle/2026/10/a-new-ai-disclosure-law-from-pennsylvania-but-what-does-it-actually-cover">A New AI Disclosure Law from Pennsylvania. But What Does It Actually Cover? — Loeb &amp; Loeb (October)</a></li>
+    <li><a href="https://pasenatornick.com/pisciottanos-landmark-ai-bill-establishes-one-of-nations-first-advertising-disclosure-standards/">Pisciottano's Landmark AI Bill — press release from Pennsylvania State Senator Pisciottano (10/7)</a></li>
+    <li><a href="https://www.fnnews.com/news/202605311349189793">FTC makes labeling of AI virtual people in ads mandatory — The Financial News (Korean) (5/31)</a></li>
+    <li><a href="https://www.webpronews.com/canva-craft-image-generation-model-designarena">Canva's First Homegrown Image Model Debuts Fourth on DesignArena — WebProNews (10/22)</a></li>
+    <li><a href="https://macrumors.com/2026/10/21/anthropic-claude-duet/">Anthropic Launches Claude Duet, a Proactive AI Agent — MacRumors (10/21)</a></li>
   </ol>
 </section>
 
