@@ -16,3 +16,8 @@ Korean edition: https://hazajous-code.github.io/ai-newsletter-claude/trend/ (sou
 - Prepare the issue copies first, register them in `scheduled.json` (`{"id","date","title","promoted": false}`), and `promote.py` (run daily by `.github/workflows/daily.yml`, ~07:05 KST) moves them to the front page on the publish date.
 - Glossary: footnote technical terms on first use per page, numbered in order of appearance, with a 1–2 sentence plain-language definition.
 - Style: no filler sentences; start with a fact or a judgment. Mark hypothetical examples, editorial views and company claims as such.
+
+## First-visit redirect (added 2026-10-29)
+- Every page loads `first-visit.js` in `<head>` (`../first-visit.js` from `issues/`). New issues keep the previous issue's head as is.
+- A browser's first-ever visit to the front page goes to Vol.01 (`issues/2026-10-15.html?from=first`) with a "Read the latest issue →" bar. A first visit to any other page doesn't redirect.
+- promote.py rewrites the copies' `../` links and script paths for the front page.
